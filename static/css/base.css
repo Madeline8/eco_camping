@@ -1,0 +1,152 @@
+/* Main Styles & Base Template */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* This allowas vertical centering in h100 classes to work correctly */
+html {
+    height: 100%;
+}
+
+/* Taken from Code Institute Video E009 */
+/* To make sure all font awesome icons will be correctly centered and have a consistent size */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+body {
+    height: calc(100vh - 150px);
+}
+
+.main-logo {
+    width: fit-content;
+}
+
+.main-logo a{
+    text-decoration: none;
+}
+
+#eco-style {
+    color: #01796f;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+#camping-style {
+    color: #004040;
+    font-family: 'Comic Neue', cursive;
+    font-size: 2.9rem;
+}
+
+/* /Main Styles & Base Template */
+
+/* Homepage */
+
+.banner-img {
+    background: url('/media/homepage_img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 150px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+/* search functionality from stackoverflow */
+/* https://stackoverflow.com/questions/40626695/how-can-i-create-a-search-bar-that-slide-to-the-left-on-clicking-the-label */
+#searchbar
+{
+  position: relative;
+}
+
+#searchbar #sliding-panel-outer
+{
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 240px;
+  transition: width 0.4s ease;
+}
+
+#searchbar #sliding-panel-inner
+{
+  width: 240px;
+}
+
+#searchbar .search-label
+{
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  line-height: 30px;
+}
+
+#searchbar .search-label .fa-times,
+#searchbar.collapsed .search-label .fa-search
+{
+  display: inline-block;
+}
+#searchbar .search-label .fa-search,
+#searchbar.collapsed .search-label .fa-times
+{
+  display: none;
+}
+
+#searchbar.collapsed #sliding-panel-outer
+{
+  width: 0px;
+}
+/* /search functionality from stackoverflow */
+
+#search-input {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border: 1px solid #004040;
+}
+
+/* /Homepage */
+
+/* Media Queries */
+
+@media (min-width: 1200px) {
+    
+    /* To use up space appropriately - taken from CI video */
+    .container {
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 992px){
+
+/* to style fixed top - taken from CI video */
+.fixed-top-desktop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.header-container {
+    padding-top: 150px;
+}
+}
+
+/* /Media Queries */
