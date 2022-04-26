@@ -23,6 +23,7 @@ html {
 
 body {
     height: calc(100vh - 150px);
+    font-family: 'Montserrat', sans-serif;
 }
 
 .main-logo {
@@ -48,6 +49,15 @@ body {
 
 /* /Main Styles & Base Template */
 
+/* Text Styles */
+.white-text {
+  color: #FBFCF8;
+}
+
+.btn-shop-now {
+  border: 2.5px solid white;
+}
+
 /* Homepage */
 
 /* .banner-img {
@@ -55,6 +65,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: calc(100vh-150px);
     position: fixed;
     top: 150px;
     bottom: 0px;
@@ -62,8 +73,33 @@ body {
     right: 0px;
 } */
 
+/* https://css-tricks.com/on-object-fit-and-object-position/ */
+/* Object-fit & Object-position */
+.banner-img {
+  height: calc(100vh - 145px);
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.motto-text {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  text-align: right;
+  
+}
+
+.shop-now-position {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  text-align: center;
+}
+
 /* search functionality from stackoverflow */
 /* https://stackoverflow.com/questions/40626695/how-can-i-create-a-search-bar-that-slide-to-the-left-on-clicking-the-label */
+
 #searchbar
 {
   position: relative;
