@@ -14,7 +14,7 @@
     {% endblock %}
 
     {% block corecss %}
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,10 +26,10 @@
 
     {% block corejs %}
         <script src="https://kit.fontawesome.com/48c5969d7a.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      
     {% endblock %}
 
     {% block extrajs %}
@@ -40,7 +40,7 @@
   <body>
     <header class="container-fluid fixed-top">
       <div class="row d-none d-lg-flex">
-        <div class="col my-auto py-1 text-center text-lg-left main-logo">
+        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left main-logo">
           <a href="{% url 'home' %}" class="">
             <h2 class="logo-style my-0"> 
               <span id="eco-style">Eco</span><span id="camping-style">Camping</span> 
@@ -48,30 +48,36 @@
           </a>
         </div>
         
-        <div class="col my-auto text-center py-1">Heading-links</div>
+        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center">heading list
+        </div>
 
-        <div class="col my-auto py-1">
-            <ul class="list-inline list-unstyled align-right my-0">
-
-              <!-- from stackoverflow - sliding search bar. Credited in README -->
-              <form method="GET" action="">
-              <div id="searchbar" class="collapsed input-group">
-                <div id="search-box input-group-append">
-                  <div id="sliding-panel-outer">       
-                   <div id="sliding-panel-inner">
-                   <input class="form-control" type="text" name="q" placeholder="Search our site" id="search-input" />
-                   <button id="search-submit" class="form-control">Search</button>
-                   </div><!--#sliding-panel-inner-->
-                  </div><!--#sliding-panel-outer-->      
-                   <div class="search-label">
-                     <i class="fa fa-search"></i>
-                     <i class="fa fa-times"></i>
-                   </div>
-                </div><!--#search-box-->
-             </div><!--#searchbar-->
-            </form>
-              <!--  /from stack overflow -->
-
+        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <ul class="list-inline list-unstyled text-center text-lg-right align-right my-0">
+              <li class="list-inline-item">
+                <!-- from stackoverflow - sliding search bar. Credited in README -->
+                <form method="GET" action="" class="align-middle search-form">
+                  <div id="searchbar" class="collapsed input-group">
+                    <div id="search-box input-group-append">
+                      <div id="sliding-panel-outer">
+                        <!--#sliding-panel-inner-->
+                        <div id="sliding-panel-inner">
+                          <input class="form-control" type="text" name="q" placeholder="Search our site"
+                            id="search-input" />
+                          <button id="search-submit" class="form-control" type="submit">Search</button>
+                        </div>
+                      </div>
+                      <!--#sliding-panel-outer-->
+                      <div class="search-label">
+                        <i class="fa fa-search"></i>
+                        <i class="fa fa-times"></i>
+                      </div>
+                    </div>
+                    <!--#search-box-->
+                  </div>
+                  <!--#searchbar-->
+                </form>
+                <!--  /from stack overflow -->
+              </li>
 
               <li class="list-inline-item dropdown">
                 <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
@@ -96,7 +102,7 @@
               </li>
               
               <li class="list-inline-item">
-                <a class="{% if grand_total %}font-weight-bold{% else %}{% endif %} nav-link" href="">
+                <a class="{% if grand_total %}font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
                   <div class="text-center">
                       <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                       <p class="my-0">

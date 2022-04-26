@@ -50,7 +50,7 @@ body {
 
 /* Homepage */
 
-.banner-img {
+/* .banner-img {
     background: url('/media/homepage_img.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -60,7 +60,7 @@ body {
     bottom: 0px;
     left: 0px;
     right: 0px;
-}
+} */
 
 /* search functionality from stackoverflow */
 /* https://stackoverflow.com/questions/40626695/how-can-i-create-a-search-bar-that-slide-to-the-left-on-clicking-the-label */
@@ -119,6 +119,17 @@ body {
     font-size: inherit;
     line-height: inherit;
     border: 1px solid #004040;
+}
+
+.search-label i {
+  font-size: 1.4rem;
+  color: #004040;
+}
+
+#search-submit{
+  border: 1px solid #004040;
+  background-color: #004040;
+  color: #FBFCF8;
 }
 
 /* /Homepage */
