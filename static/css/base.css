@@ -67,7 +67,7 @@ body {
 /* -----------------------------/Main Styles & Base Template */
 
 
-/* ------------------------------Text Styles */
+/* ------------------------------Text & Links - Styles */
 .white-text {
   color: #FBFCF8;
 }
@@ -76,8 +76,22 @@ body {
   border: 2.5px solid white;
 }
 
-.dark-text {
+.text-dark {
   color: #1f2812 !important;
+}
+
+/* Button styles  */
+
+.btn-light-screen {
+  border: 1px solid #004040;
+  background: #FBFCF8;
+  color: #004040;
+}
+
+.btn-light-screen:hover {
+  background: #004040;
+  color: #FBFCF8;
+  font-weight:300;
 }
 
 /* --------------------------------Homepage */
@@ -128,6 +142,49 @@ body {
 }
 
 /* ---------------------------/Homepage */
+
+/* Footer  */
+
+footer {
+  background-color: #ecf5ec;
+  padding-top: 2px;
+}
+
+.footer-link {
+  color: #1f2812;
+  
+}
+
+h6 .footer-link:hover {
+  color: #004040;
+  text-decoration: none;
+}
+
+.social-links li a i {
+  width: 4rem;
+  font-size: 1.75rem;
+  padding: 11px 0;
+  text-align: center;
+  color: #004040;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -webkit-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+}
+
+.social-links li a i:hover {
+  color: #01796f;
+}
+
+.footer-suscribe {
+  display: block;
+}
+
+.copyright {
+  background-color: #01796f;
+}
+
+/* /Footer  */
 
 /* ---------------------------Media Queries */
 
