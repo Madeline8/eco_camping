@@ -38,92 +38,96 @@
     <title>Eco Camping {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
+
+    <!-- Navigation  -->
     <header class="container-fluid fixed-top">
-      <div class="row d-none d-lg-flex">
-        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left main-logo">
-          <a href="{% url 'home' %}" class="">
-            <h2 class="logo-style my-0"> 
-              <span id="eco-style">Eco</span><span id="camping-style">Camping</span> 
+      <div id="navigation-top" class="row pt-lg-2 d-none d-lg-flex">
+        <!-- EcoCamping Logo  -->
+        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-lg-left main-logo  text-center text-lg-left">
+          <a href="{% url 'home' %}" class="nav-link">
+            <h2 class="logo-style my-0">
+              <span id="eco-style">Eco</span><span id="camping-style">Camping</span>
             </h2>
           </a>
         </div>
-        
-        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center">heading list
+        <!-- Search Bar  -->
+        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+          <form method="GET" action="">
+            <div class="input-group w-100 search-box">
+                <div class="text-center">
+                    <input type="text" name="q" class="form-control rounded-0" placeholder="Search our site"/>
+                </div>
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-dark form-control rounded-0">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+          </form>
         </div>
 
-        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-            <ul class="list-inline list-unstyled text-center text-lg-right align-right my-0">
-              <li class="list-inline-item">
-                <!-- from stackoverflow - sliding search bar. Credited in README -->
-                <form method="GET" action="" class="align-middle search-form">
-                  <div id="searchbar" class="collapsed input-group">
-                    <div id="search-box input-group-append">
-                      <div id="sliding-panel-outer">
-                        <!--#sliding-panel-inner-->
-                        <div id="sliding-panel-inner">
-                          <input class="form-control" type="text" name="q" placeholder="Search our site"
-                            id="search-input" />
-                          <button id="search-submit" class="form-control" type="submit">Search</button>
-                        </div>
-                      </div>
-                      <!--#sliding-panel-outer-->
-                      <div class="search-label">
-                        <i class="fa fa-search"></i>
-                        <i class="fa fa-times"></i>
-                      </div>
-                    </div>
-                    <!--#search-box-->
-                  </div>
-                  <!--#searchbar-->
-                </form>
-                <!--  /from stack overflow -->
-              </li>
+        <!-- My Account and Shopping Cart  -->
+        <div class="col-12 col-lg-4 my-auto">
+          <ul class="list-inline text-center ml-auto">
 
-              <li class="list-inline-item dropdown">
-                <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">
-                  <div class="text-center">
-                    <div><i class="fas fa-user fa-lg"></i></div>
-                    <p class="my-0">My Account</p>
-                  </div>
-                </a>
-                <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                  {% if request.user.is_authenticated %}
-                    {% if request.user.is_superuser %}
-                      <a href="" class="dropdown-item">Product Management</a>
-                    {% endif %}
-                    <a href="" class="dropdown-item">My Account</a>
-                    <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                  {% else %}
-                    <a href="{% url 'account_signup' %}" class="dropdown-item">Sign Up</a>
-                    <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                  {% endif %}
-              </div>
-              </li>
-              
-              <li class="list-inline-item">
-                <a class="{% if grand_total %}font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
-                  <div class="text-center">
-                      <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                      <p class="my-0">
-                          {% if grand_total %}
-                              ${{ grand_total|floatformat:2 }}
-                          {% else %}
-                              $0.00
-                          {% endif %}
-                      </p>
-                  </div>
+            <li class="list-inline-item dropdown">
+              <a class="nav-link text-dark" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <div class="text-center">
+                  <div><i class="fas fa-user fa-lg"></i></div>
+                  <p class="my-0">My Account</p>
+                </div>
               </a>
-              </li>
-            </ul>
-
-      
+              <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                {% if request.user.is_authenticated %}
+                {% if request.user.is_superuser %}
+                <a href="" class="dropdown-item">Product Management</a>
+                {% endif %}
+                <a href="" class="dropdown-item">My Account</a>
+                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                {% else %}
+                <a href="{% url 'account_signup' %}" class="dropdown-item">Sign Up</a>
+                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                {% endif %}
+              </div>
+            </li>
+            <li class="list-inline-item">
+              <a class="{% if grand_total %}font-weight-bold{% else %}text-dark{% endif %} nav-link" href="">
+                <div class="text-center">
+                  <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                  <p class="my-0">
+                    {% if grand_total %}
+                    ${{ grand_total|floatformat:2 }}
+                    {% else %}
+                    $0.00
+                    {% endif %}
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Responsive design  -->
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light w-100">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          {% include 'includes/main-nav.html' %}
+          {% include 'includes/mobile-top-header.html' %}
+        </nav>
+      </div>
+      <!-- Delivery Banner  -->
+      <div class="row text-center delivery-banner">
+        <div class="col">
+          <h4 class="my-1 text-center">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>
         </div>
       </div>
     </header>
-    
+
     {% if messages %}
-        <div class="message-container"></div>
+      <div class="message-container"></div>
     {% endif %}
 
     {% block page_header %}
@@ -134,6 +138,6 @@
 
     {% block postloadjs %}
     {% endblock %}
-    <script src="static/js/script.js"></script>   
+    <script src="static/js/script.js"></script>
   </body>
 </html>

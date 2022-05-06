@@ -1,4 +1,4 @@
-/* Main Styles & Base Template */
+/* -----------------------------Main Styles - Base Template - Header&Footer */
 
 * {
     margin: 0;
@@ -22,15 +22,12 @@ html {
 }
 
 body {
-    height: calc(100vh - 150px);
+    height: calc(100vh - 164px);
     font-family: 'Montserrat', sans-serif;
 }
 
 .main-logo {
     width: fit-content;
-}
-
-.main-logo a{
     text-decoration: none;
 }
 
@@ -47,9 +44,30 @@ body {
     font-size: 2.9rem;
 }
 
-/* /Main Styles & Base Template */
+.search-box {
+  justify-content: center;
 
-/* Text Styles */
+}
+
+#navigation-top {
+  background-color: #ecf5ec;
+}
+
+.navbar {
+  background-color: #ecf5ec;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  justify-content: justify-content-start!important;
+}
+
+
+/* -----------------------------/Main Styles & Base Template */
+
+
+/* ------------------------------Text Styles */
 .white-text {
   color: #FBFCF8;
 }
@@ -58,7 +76,11 @@ body {
   border: 2.5px solid white;
 }
 
-/* Homepage */
+.dark-text {
+  color: #1f2812 !important;
+}
+
+/* --------------------------------Homepage */
 
 /* .banner-img {
     background: url('/media/homepage_img.jpg');
@@ -82,6 +104,14 @@ body {
   object-position: center center;
 }
 
+.img-container {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .motto-text {
   position: absolute;
   bottom: 20%;
@@ -97,103 +127,44 @@ body {
   text-align: center;
 }
 
-/* search functionality from stackoverflow */
-/* https://stackoverflow.com/questions/40626695/how-can-i-create-a-search-bar-that-slide-to-the-left-on-clicking-the-label */
+/* ---------------------------/Homepage */
 
-#searchbar
-{
-  position: relative;
-}
-
-#searchbar #sliding-panel-outer
-{
-  display: inline-block;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  right: 30px;
-  width: 240px;
-  transition: width 0.4s ease;
-}
-
-#searchbar #sliding-panel-inner
-{
-  width: 240px;
-}
-
-#searchbar .search-label
-{
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  position: absolute;
-  right: 0;
-  top: 0;
-  line-height: 30px;
-}
-
-#searchbar .search-label .fa-times,
-#searchbar.collapsed .search-label .fa-search
-{
-  display: inline-block;
-}
-#searchbar .search-label .fa-search,
-#searchbar.collapsed .search-label .fa-times
-{
-  display: none;
-}
-
-#searchbar.collapsed #sliding-panel-outer
-{
-  width: 0px;
-}
-/* /search functionality from stackoverflow */
-
-#search-input {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    border: 1px solid #004040;
-}
-
-.search-label i {
-  font-size: 1.4rem;
-  color: #004040;
-}
-
-#search-submit{
-  border: 1px solid #004040;
-  background-color: #004040;
-  color: #FBFCF8;
-}
-
-/* /Homepage */
-
-/* Media Queries */
+/* ---------------------------Media Queries */
 
 @media (min-width: 1200px) {
     
-    /* To use up space appropriately - taken from CI video */
-    .container {
-        max-width: 80%;
-    }
+  /* To use up space appropriately - taken from CI video E010 */
+  .container {
+    max-width: 80%;
+  }
 }
 
-@media (min-width: 992px){
-
+@media (min-width: 992px) {
 /* to style fixed top - taken from CI video */
-.fixed-top-desktop {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
+.fixed-top-desktop-only {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 
 .header-container {
-    padding-top: 150px;
-}
+  padding-top: 164px;
 }
 
-/* /Media Queries */
+}
+
+/* Mobiles and medium size screens  */
+/* pad the top a bit when navbar is collapsed on mobile - taken form CI video*/
+@media (max-width: 991px) {
+  .header-container {
+    padding-top: 112px;
+  }
+
+  body {
+    height: calc(100vh - 112px);
+  }
+}
+
+/*-------------------------------------- /Media Queries */
