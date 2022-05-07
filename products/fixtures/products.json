@@ -1,0 +1,28 @@
+[
+    {
+      "pk": 1,
+      "model": "products.product",
+      "fields": {
+        "sku": "1",
+        "name": "Outdoor 2-Person Double Door Camping Dome Tent",
+        "description": "The 2-Person Double Door Camping Dome Tent is perfect for weekend camping and outdoor adventures. The dome is made of 180T silver coated polyester and 180T polyester taffeta, which is breathable, tear-resistant, and UV-proof. The floor uses strong and durable 210D nylon oxford. Glass fiber poles feature high-strength while remaining lightweight. What's more, the door features double layers, allowing you to zip up mesh only for ventilation or zip up the polyester layer for complete closure. A rainfly over the door provides extra protection against sun and rain. ",
+        "price": 49.89,
+        "category": 1,
+        "rating": 4.8,
+        "image": "tent_1.jpg"
+      }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+          "sku": "2",
+          "name": "3-4 Person Camouflage Camping Dome Tent",
+          "description": "Enjoy entertainment outdoors with the 3-4 Person Camping Dome Tent! It has a spacious room that can sleep up to 4 persons. The dome is made of 180T silver coated polyester, which is breathable, tear-resistant, and UV-proof. Meanwhile, the floor uses strong and waterproof nylon oxford. Glass fiber poles feature high-strength while remaining lightweight. And it can be packed into the included portable bag for ease of transportation. For weekend camping or outdoor adventures, this tent is definitely a great choice. Don't hesitate to order now!",
+          "price": 53.00,
+          "category": 1,
+          "rating": 4.7,
+          "image": "tent_2.jpg"
+        }
+      }
+]

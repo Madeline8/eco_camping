@@ -154,7 +154,7 @@ div .header-icon-link:focus {
 /* https://css-tricks.com/on-object-fit-and-object-position/ */
 /* Object-fit & Object-position */
 .banner-img {
-  height: calc(100vh - 112px);
+  height: calc(100vh - 100px);
   width: 100%;
   object-fit: cover;
   object-position: center center;
@@ -263,14 +263,13 @@ border-top: shadow p-3 mb-5 rounded;
   left: 50%;
   text-align: center;
 }
-
 }
 
 /* Mobiles and medium size screens  */
 /* pad the top a bit when navbar is collapsed on mobile - taken form CI video*/
 @media (max-width: 991px) {
   .header-container {
-    padding-top: 112px;
+    padding-top: 100px;
   }
 
   body {

@@ -1,0 +1,66 @@
+[
+    {
+      "pk": 1,
+      "model": "products.category",
+      "fields": {
+        "name": "tents",
+        "friendly_name": "Tents"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.category",
+      "fields": {
+        "name": "sleeping_bags",
+        "friendly_name": "Sleeping Bags"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.category",
+      "fields": {
+        "name": "lightning_and_electronics",
+        "friendly_name": "Lightning & Electronics"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.category",
+      "fields": {
+        "name": "camp_kitchen_gear",
+        "friendly_name": "Camp Kitchen Gear"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.category",
+      "fields": {
+        "name": "camping_clothing",
+        "friendly_name": "Camping Clothing"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.category",
+      "fields": {
+        "name": "giftable_gear",
+        "friendly_name": "Giftable Gear"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "products.category",
+      "fields": {
+        "name": "dog_toys_and_gear",
+        "friendly_name": "Dog Toys & Gear"
+      }
+    },
+    {
+      "pk": 8,
+      "model": "products.category",
+      "fields": {
+        "name": "new_arrivals",
+        "friendly_name": "New Arrivals"
+      }
+    }
+  ]
