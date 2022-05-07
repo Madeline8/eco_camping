@@ -63,32 +63,74 @@ body {
   justify-content: justify-content-start!important;
 }
 
+div .header-icon-link {
+  color: #004040;
+  
+}
+
+div .header-icon-link:hover,
+div .header-icon-link:active,
+div .header-icon-link:focus {
+  color: #01796f;
+}
+
+.btn-style {
+  background-color: #004040;
+  border: 1px solid #01796f;
+  color: #ecf5ec;
+}
+
+.btn-style:hover,
+.btn-style:active,
+.btn-style:focus {
+  background-color: #01796f;
+  border: 1px solid #004040;
+  color: #ecf5ec;
+}
+
+.search-input {
+  border: 1px solid #01796f;
+}
+
+.search-input:hover,
+.search-input:active,
+.search-input:focus {
+  border: 1px solid #004040;
+}
+
 
 /* -----------------------------/Main Styles & Base Template */
 
 
 /* ------------------------------Text & Links - Styles */
-.white-text {
-  color: #FBFCF8;
+
+.uppercase-text {
+  text-transform: uppercase;
 }
 
-.btn-shop-now {
-  border: 2.5px solid white;
+.white-text {
+  color: #FBFCF8;
 }
 
 .text-dark {
   color: #1f2812 !important;
 }
 
+.bg-dark-green {
+  background: #004040;
+}
+
 /* Button styles  */
 
-.btn-light-screen {
+.btn-light-screen,
+.btn-shop-now {
   border: 1px solid #004040;
   background: #FBFCF8;
   color: #004040;
 }
 
-.btn-light-screen:hover {
+.btn-light-screen:hover,
+.btn-shop-now:hover {
   background: #004040;
   color: #FBFCF8;
   font-weight:300;
@@ -112,7 +154,7 @@ body {
 /* https://css-tricks.com/on-object-fit-and-object-position/ */
 /* Object-fit & Object-position */
 .banner-img {
-  height: calc(100vh - 145px);
+  height: calc(100vh - 112px);
   width: 100%;
   object-fit: cover;
   object-position: center center;
@@ -136,7 +178,7 @@ body {
 
 .shop-now-position {
   position: absolute;
-  bottom: 30%;
+  bottom: 50%;
   left: 50%;
   text-align: center;
 }
@@ -184,6 +226,10 @@ h6 .footer-link:hover {
   background-color: #01796f;
 }
 
+.footer-border-top {
+border-top: shadow p-3 mb-5 rounded;
+}
+
 /* /Footer  */
 
 /* ---------------------------Media Queries */
@@ -210,6 +256,14 @@ h6 .footer-link:hover {
   padding-top: 164px;
 }
 
+/* Adjust position of Shop Now button  */
+.shop-now-position {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  text-align: center;
+}
+
 }
 
 /* Mobiles and medium size screens  */
@@ -222,6 +276,12 @@ h6 .footer-link:hover {
   body {
     height: calc(100vh - 112px);
   }
+
+  /* Size of delivery banner text  */
+  .delivery-banner h4 {
+    font-size: .9rem;
+}
+
 }
 
 /*-------------------------------------- /Media Queries */
