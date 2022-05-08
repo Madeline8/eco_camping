@@ -1,28 +1,600 @@
 [
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sku": "1",
+      "name": "Outdoor 2-Person Double Door Camping Dome Tent",
+      "description": "The 2-Person Double Door Camping Dome Tent is perfect for weekend camping and outdoor adventures. The dome is made of 180T silver coated polyester and 180T polyester taffeta, which is breathable, tear-resistant, and UV-proof. The floor uses strong and durable 210D nylon oxford. Glass fiber poles feature high-strength while remaining lightweight. What's more, the door features double layers, allowing you to zip up mesh only for ventilation or zip up the polyester layer for complete closure. A rainfly over the door provides extra protection against sun and rain. ",
+      "price": 49.89,
+      "category": 1,
+      "rating": 4.8,
+      "image": "tent_1.jpg"
+    }
+  },
     {
-      "pk": 1,
-      "model": "products.product",
-      "fields": {
-        "sku": "1",
-        "name": "Outdoor 2-Person Double Door Camping Dome Tent",
-        "description": "The 2-Person Double Door Camping Dome Tent is perfect for weekend camping and outdoor adventures. The dome is made of 180T silver coated polyester and 180T polyester taffeta, which is breathable, tear-resistant, and UV-proof. The floor uses strong and durable 210D nylon oxford. Glass fiber poles feature high-strength while remaining lightweight. What's more, the door features double layers, allowing you to zip up mesh only for ventilation or zip up the polyester layer for complete closure. A rainfly over the door provides extra protection against sun and rain. ",
-        "price": 49.89,
-        "category": 1,
-        "rating": 4.8,
-        "image": "tent_1.jpg"
-      }
-    },
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "2",
+      "name": "3-4 Person Camouflage Camping Dome Tent",
+      "description": "Enjoy entertainment outdoors with the 3-4 Person Camping Dome Tent! It has a spacious room that can sleep up to 4 persons. The dome is made of 180T silver coated polyester, which is breathable, tear-resistant, and UV-proof. Meanwhile, the floor uses strong and waterproof nylon oxford. Glass fiber poles feature high-strength while remaining lightweight. And it can be packed into the included portable bag for ease of transportation. For weekend camping or outdoor adventures, this tent is definitely a great choice. Don't hesitate to order now!",
+      "price": 53.00,
+      "category": 1,
+      "rating": 4.6,
+      "image": "tent_2.jpg"
+    }
+  },
+      {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "3",
+      "name": "Waterproof Outdoor 3-4 Person Automatic Camping Tent",
+      "description": "This automatic family tent is a great choice for camping, hiking, traveling and other outdoor activities. It has double door and double window. Small compact and lightweight enough to be carried in your backpack. Unique design make it easy to setup and pack-up. You can use it for camping even on rainy days or sunny days. Spider foot structure makes the tent more stable in the windy and rainy weather. Don't hesitate, this tent will make a perfect camping for your family.",
+      "price": 96.00,
+      "category": 1,
+      "rating": 4.9,
+      "image": "tent_3.jpg"
+    }
+  },
     {
-        "pk": 2,
-        "model": "products.product",
-        "fields": {
-          "sku": "2",
-          "name": "3-4 Person Camouflage Camping Dome Tent",
-          "description": "Enjoy entertainment outdoors with the 3-4 Person Camping Dome Tent! It has a spacious room that can sleep up to 4 persons. The dome is made of 180T silver coated polyester, which is breathable, tear-resistant, and UV-proof. Meanwhile, the floor uses strong and waterproof nylon oxford. Glass fiber poles feature high-strength while remaining lightweight. And it can be packed into the included portable bag for ease of transportation. For weekend camping or outdoor adventures, this tent is definitely a great choice. Don't hesitate to order now!",
-          "price": 53.00,
-          "category": 1,
-          "rating": 4.7,
-          "image": "tent_2.jpg"
-        }
-      }
-]
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "4",
+      "name": "Peregrine Tent-Gannet 2 Person Combo",
+      "description": "This is a straight forward, durable tent designed to handle the rigors of long term use.  Great for beginner or intermediate campers, the no frills design combined with a solid construction, YKK zippers, and aluminum poles guarantee years of dependable use.  Two peak vents help keep the tent comfortable and dry in humid conditions. It has 2 doors, 2 side mesh pockets, and a hook at the tent apex.",
+      "price": 149.50,
+      "category": 1,
+      "rating": 4.8,
+      "image": "tent_4.jpg"
+    }
+  },
+    {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "5",
+      "name": "Truck Tent",
+      "description": "Create the ultimate camping oasis wherever your truck takes you.  No more searching for a clean, dry, and level campsite.  The Sportz Truck Tent assembles in the back of your open bed pickup creating the perfect campsite no matter where you park.  Don't worry about cleaning the truck bed before using the tent, Napier's exclusive full floor design protects you from a dirty truck.",
+      "price": 349.89,
+      "category": 1,
+      "rating": 4.7,
+      "image": "tent_5.jpg"
+    }
+  },
+    {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "6",
+      "name": "6 Person Big House Deluxe Tent (Big Agnes)",
+      "description": "This Deluxe 6 Person tent will definitely make you feel like home in the great outdoors (especially if you are less than 6 people sleeping inside). It has steep walls and large living space with two doors that will keep the inside ventilated (with only the mesh closed) and can be sealed with storm flippers over the zippers to keep the inside dry in stormy weather. The tent has 12 large interior pockets to keep your stuff organized and even comes with your own front door welcome mat.",
+      "price": 225.00,
+      "category": 1,
+      "rating": 4.9,
+      "image": "tent_6.jpg"
+    }
+  },
+    {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "7",
+      "name": "Settler 15 F Sleeping Bag",
+      "description": "Sleep and relax in the SETTLER 15 F sleeping bag after an exciting day outdoors. An ideal 3 season sleeping bag for backpacking, camping, mountaineering, expeditions or hiking trips.",
+      "price": 136.99,
+      "category": 2,
+      "rating": 4.7,
+      "image": "sleeping_bag_settler_1.jpg"
+    }
+  },
+    {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "8",
+      "name": "Camfy 50 Sleeping Bag",
+      "description": "Made by lining-190T pongee which can provide lasting coziness and a super soft tucked-in comfort. Outer cover with Layer-185T Polyester which provides excellent air permeability prevents dampness.Specially treated cotton adopts unique through-type quilting ensures cotton is distributed and won't part away. EN ISO 23537-1 temperature test: Comfort: 12℃; Limit: 8℃; Extreme: -4℃.Applied with GRS certified recycle Synthetic cotton which provides excellent comfort and is also environmentally friendly.Fit for people within 150cm/59in of shoulder/chest/hip circumference.",
+      "price": 67.00,
+      "category": 2,
+      "rating": 4.7,
+      "image": "sleeping_bag_camfy_2.jpg"
+    }
+  },
+      {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "9",
+      "name": "Camfy 30 Sleeping Bag",
+      "description": "Outer layer made by high-density Polyester material which's wear-resistant, dust-proof, and dirt-resistant. Filling with premium-quality, Global Recycled Standard certified, recycled synthetic polyester material, which provide incredibly soft.",
+      "price": 89.99,
+      "category": 2,
+      "rating": 4.6,
+      "image": "sleeping_bag_camfy_3.jpg"
+    }
+  },
+    {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sku": "10",
+      "name": "Sleeping Bag Palmetto C006",
+      "description": "Stay warm, even when the temperature dips to 30 degrees F in this Coleman cool weather sleeping bag with polyester cover and soft tricot fiber blend liner.  The specially-designed, patented zipper system plows fabric away from the zipper to avoid snags, and Fiberlock Construction prevents insulation from shifting, extending the life of your sleeping bag.",
+      "price": 75.00,
+      "category": 2,
+      "rating": 4.7,
+      "image": "sleeping_bag_palmetto4.jpg"
+    }
+  },
+    {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "sku": "11",
+      "name": "Camfy P3 Air Sleeping Pad",
+      "description": "Prevented leakage by using aviation-grade TPU edge pressing process. A C-type structure and one-way valve allow inflation and deflation faster and easier. It takes only 12-15 quick pumps to be fully inflated.3-inch thickness which provides the stability and considerable insulation from ground temperature. Ergonomic design on the back, waist, legs, and ankles according to the curve of the human body, disperses the body pressure and effectively protects all parts of the body.",
+      "price": 56.55,
+      "category": 2,
+      "rating": 4.4,
+      "image": "sleeping_bag_air_5.jpg"
+    }
+  },
+    {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sku": "12",
+      "name": "Sleeping Bag Zero Degrees Silverton",
+      "description": "Turn your next adventure into a luxury trip with the Coleman Silverton sleeping bag, a mummy-style bag that can help keep you warm in temperatures as low as 0 degrees F.  It's constructed with lightweight ColethermA hollow polyester insulation to help keep you warm from top to bottom.  An adjustable hood and special quilting construction surround  your head and body to help eliminate potential cold spots.",
+      "price": 112.00,
+      "category": 2,
+      "rating": 4.9,
+      "image": "sleeping_bag_zero_6.jpg"
+    }
+  },
+    {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "sku": "13",
+      "name": "Coast EAL12 Black/White Emergency Lantern",
+      "description": "Whether you are going camping or preparing for a winter storm, the EAL12 Lantern is a great compact lantern that because of the split handle can be easily hung on a branch or line. Cycle between high, low, solid red, and flashing red modes to best suit your situation. (4 x AA batteries not included) With Coast?ÇÖs commitment to quality, the EAL12 Lantern is impact resistant, weather resistant and its LEDs are virtually unbreakable. The EAL12 Lantern is backed by Coast?ÇÖs five-year warranty against defects in materials and workmanship.",
+      "price": 95.20,
+      "category": 3,
+      "rating": 4.7,
+      "image": "lightning_coast_1.jpg"
+    }
+  },
+    {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "sku": "14",
+      "name": "3*LED 10W 3-Mode 5000LM White Light Headlamp",
+      "description": "Thank you for your coming! We all know a headlamp brings not only convenience but also safety. Pay attention to our LW-5000 3*LED 10W 3-Mode 5000LM White Light Headlamp Black features stable performance, high brightness and long durability. It has 3 modes for free option. With adjustable focus, you are allowed to randomly adjust it for better lighting effect. And this headlamp is wearable. Quite portable and convenient for outdoor trip! You'd better catch the chance here!",
+      "price": 28.00,
+      "category": 3,
+      "rating": 4.5,
+      "image": "lightning_headlamp2.jpg"
+    }
+  },
+    {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "sku": "15",
+      "name": "Coast HL4 145 lumens Black LED Head Lamp AAA Battery",
+      "description": "By combining red and white LEDs, the HL4 Headlamp is great when you need bright illumination or need to work in situations while preserving your night vision. Using utility beam optics, this headlamp produces a diffused beam best suited for up close work. Dual Color Utility Bead Headlamp beset suited for up close work. Hinged Beam Technology to allow the direction of the light to be changed",
+      "price": 133.05,
+      "category": 3,
+      "rating": 4.8,
+      "image": "lightning_coast3.jpg"
+    }
+  },
+    {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+      "sku": "16",
+      "name": "Nebo Poppy Red LED Pop Up Lantern",
+      "description": "Poppy is a combination 300 lumen COB LED lantern and bright LED spot light. Poppy is the perfect light for indoor or outdoor use when versatility and powerful lighting are critical. With a rubberized impact-resistant body, Poppy is both rugged and soft to the touch. Poppy easily changes from spot light to lantern with just a slide of its top, revealing a full 360 degree COB lantern. The handle is designed to easily adjust to conveniently serve both light modes.",
+      "price": 317.94,
+      "category": 3,
+      "rating": 4.8,
+      "image": "lightning_nebo_4.jpg"
+    }
+  },
+    {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+      "sku": "17",
+      "name": "ACOPOWER LionCooler X50A Combo, Portable Solar Freezer (52 Quart Capacity) & Extra Backup 173Wh Battery",
+      "description": "ACOPOWER LiONCooler X50A Combo, Portable Fridge Freezer Cooler & Second Backup 173Wh Rechargeable Battery The second backup battery provides you with continuous 24 hour cooling at 32 °F",
+      "price": 954.98,
+      "category": 3,
+      "rating": 4.7,
+      "image": "electro_acopower1.jpg"
+    }
+  },
+    {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+      "sku": "18",
+      "name": "110V 300W Generator Portable Power Station Supply for Outdoor",
+      "description": "Cool Features: The silver case is metal and the black ends are plastic, more durable than other soalr generators.With 300W continuous power, 350W peak power, 60000mAh battery capacity and pure sine wave, this power generator can charge your devices more stably;5.6lb light weight makes it perfectly fit in your backpack.                                                                    222Wh Back-up Power Supply: Wide applications make it suitable for lots of devices; 110V AC outlets can charge your CPAP machine, tablet, laptop, TV, fan, Christmas lights etc; 2 * 12V DC Ports can be used for car vacuum, car refrigerator, car air fan and car charger etc; 2* QC3.0 USB and 1 * 2.4A USB ports can charge your phones, drones, iPad, GPS, mp3, camera, etc.",
+      "price": 209.00,
+      "category": 3,
+      "rating": 4.6,
+      "image": "electro_generator2.jpg"
+    }
+  },
+    {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+      "sku": "19",
+      "name": "ACOPOWER 100w 12v Portable Solar Panel kit, Foldable 2X 50w Mono Suitcase, proteusX Waterproof 20A Charge Controller",
+      "description": "The ACOPOWER 100W Monocrystalline Lightweight Portable Solar Panel Kit is lightweight, portable and comes with a ProteusX 20A waterproof solar charge controller. The included charge controller protects battery against unsafe electrical conditions and must be used to charge 12V batteries. To charge solar generators with a built-in charge controller, simply use the MC4 cables provided and plug them into the cables that came with your power station to charge. A 12V battery and solar generator can be charged at the same time.",
+      "price": 277.82,
+      "category": 3,
+      "rating": 4.7,
+      "image": "electro_solarpanel3.jpg"
+    }
+  },
+    {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+      "sku": "20",
+      "name": "Insulated Cooler Tote Bag by True",
+      "description": "Keep drinks cold on the go with this large insulated tote, sporting an ample front pocket and removable shoulder strap. Lined with food-safe PEVA, it holds up to three standard wine bottles. Holds three standard bottles. Includes a large front pocket and removable shoulder strap.",
+      "price": 55.98,
+      "category": 4,
+      "rating": 4.4,
+      "image": "kitchen_insulated_tote_bag1.jpg"
+    }
+  },
+    {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+      "sku": "21",
+      "name": "Saunter: Insulated Rucksack Cooler by True",
+      "description": "Keep drinks cold on the go with this large insulated bag, sporting an ample front pocket and removable shoulder strap. This rugged design has a leak resistant interior and can hold your favorite 12-pack with ice or three standard wine bottles. Easily holds three standard wine bottles or your favorite 12-pack with ice. Constructed from leak resistant materials.",
+      "price": 49.55,
+      "category": 4,
+      "rating": 4.3,
+      "image": "kitchen_saunter_bag2.jpg"
+    }
+  },
+    {
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+      "sku": "22",
+      "name": "Outdoor lightweight Chair Portable Folding Camping Chair",
+      "description": "If you're enjoy camping or fishing, you can't miss this Small Camp Chair. This chair features durable, abrasion-resistant . With engineering mechanics design, it's very stable. Moreover, it's also easy to clean. Its small size and foldable design is very convenient for you to bring it outside. You can bring this chair at any place you like. So what are you waiting for? Don't hesitate, just take it home!",
+      "price": 39.99,
+      "category": 4,
+      "rating": 4.4,
+      "image": "kitchen_portable_chair3"
+    }
+  },
+    {
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+      "sku": "23",
+      "name": "PACKiT Lunch Bag Cooler 23 L Multicolored",
+      "description": "Keep perishable groceries fresh and safe while you run errands with this genius cooler shopping bag. The cooling power is built into the base of the bag so there's no need for ice packs to keep items chilled. From the checkout aisle to your kitchen, your meat, dairy, fruits, veggies and frozen foods stay safe so you don't have to stop home to unload them. This grocery cooler bag also offers plenty of room on the top to carry non-perishable items. Perfect for communities with plastic bag bans, this soft cooler bag is an everyday essential.",
+      "price": 32.40,
+      "category": 4,
+      "rating": 4.5,
+      "image": "kitchen_cooler4"
+    }
+  },
+    {
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+      "sku": "24",
+      "name": "Camp Dutch Oven",
+      "description": "The Lodge portable camp stove is the pot that does it all.  The flanged lid holds hot coals and inverts for use as a griddle.  The integral legs allow the oven to sit perfectly over hot coals.  The bail handle is for use with a tripod. Includes Camp Dutch Oven Cooking 101 cookbook.",
+      "price": 160.00,
+      "category": 4,
+      "rating": 4.7,
+      "image": "kitchen_dutch_oven5.jpg"
+    }
+  },
+    {
+    "pk": 25,
+    "model": "products.product",
+    "fields": {
+      "sku": "25",
+      "name": "Mini Flatpack Grill",
+      "description": "The Flatpack Uco portable grill and firepit packs compact for easy transportation to the beach, campsite, or barbeque.  It's constructed of stainless steel for durability and easy maintenance.  After a quick 30 second set-up, you're ready to go.  All you need to do to set up this grill is unfold it and place the grates on top.  It has a stable base for safe grilling, and the sides serve as wind breaks for grilling in windy conditions.  It can also be used as a firepit, to help you leave no trace.  Serves 2 to 3 people.",
+      "price": 99.50,
+      "category": 4,
+      "rating": 4.8,
+      "image": "kitchen_flatpackgrill6.jpg"
+    }
+  },
+    {
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+      "sku": "26",
+      "name": "Campsite Aluminum Tribal Pots 3PC Set",
+      "description": "Great for camping and the outdoors!  Boil up some water or create some tasty meals with these aluminum pots.  The Acecamp pots pack easily with wire bale handles that fold down, and the flat lid has an integrated handle so you can check on your stew without an extra tool to lift the lid. 3 Piece Set :  4L, 8L, 12L Pots",
+      "price": 164.00,
+      "category": 4,
+      "rating": 4.6,
+      "image": "kitchen_tribal_pots7"
+    }
+  },
+    {
+    "pk": 27,
+    "model": "products.product",
+    "fields": {
+      "sku": "27",
+      "name": "Eat Sleep Camp Repeat T-shirt",
+      "description": "The t-shirt is made of premium quality ring spun cotton for a great quality soft feel, and comfortable retail fit. Our soft textile flex print gives a really high end finish to any striking design. This high quality print will not crack or fade which ensures your garment stays looking fantastic.",
+      "price": 24.95,
+      "category": 5,
+      "rating": 4.3,
+      "image": "clothing_tshirt1.jpg"
+    }
+  },
+    {
+    "pk": 28,
+    "model": "products.product",
+    "fields": {
+      "sku": "28",
+      "name": "Hike More Worry Less",
+      "description": "This updated unisex essential fits like a well-loved favorite. Super soft cotton and excellent quality print make one fall in love with it over and over again. 100% Soft cotton",
+      "price": 28.95,
+      "category": 5,
+      "rating": 4.8,
+      "image": "clothing_hike2.jpg"
+    }
+  },
+    {
+    "pk": 29,
+    "model": "products.product",
+    "fields": {
+      "sku": "29",
+      "name": "Treeline in Eastern Blue Kids Crew Neck T-Shirt",
+      "description": "Get a t-shirt for your kids that has it all—colorful design that looks great, and a fit that allows the kiddos to participate in all of their favorite activities and be comfy the whole time. The ultimate kids tee.",
+      "price": 23.00,
+      "category": 5,
+      "rating": 4.6,
+      "image": "clothing_treeline_3.jpg"
+    }
+  },
+    {
+    "pk": 30,
+    "model": "products.product",
+    "fields": {
+      "sku": "30",
+      "name": "Florida Hiker Sunset Organic cotton kids t-shirt",
+      "description": "Put your kids in a t-shirt that's cute, super comfortable, and made of natural fabrics! This 100% organic cotton tee is sure to become their favorite!",
+      "price": 21.00,
+      "category": 5,
+      "rating": 4.6,
+      "image": "clothing_cotton_kids4.jpg"
+    }
+  },
+    {
+    "pk": 31,
+    "model": "products.product",
+    "fields": {
+      "sku": "31",
+      "name": "Apparently I Camp Now T-shirt",
+      "description": "The t-shirt is made of premium quality ring spun cotton for a great quality soft feel, and comfortable retail fit. Our soft textile flex print gives a really high end finish to any striking design. This high quality print will not crack or fade which ensures your garment stays looking fantastic.",
+      "price": 24.95,
+      "category": 5,
+      "rating": 4.7,
+      "image": "clothing_campnowtshirt5.jpg"
+    }
+  },
+    {
+    "pk": 32,
+    "model": "products.product",
+    "fields": {
+      "sku": "32",
+      "name": "Mersin Eco-friendly Ultra Soft Chevron Towel - Green",
+      "description": "Bright green color + chevron pattern, the perfect vibrant combination to light up your life! It will be your best travel companion, your favorite cover up when the afternoons get cold and a perfect ultra soft beach towel you could ever have... Conscious: With one Hilana Towel, you recycle what a person recycles in 8 years. Join us Be A Change Maker!",
+      "price": 38.40,
+      "category": 5,
+      "rating": 4.7,
+      "image": "clothing_eco_towel6.jpg"
+    }
+  },
+    {
+    "pk": 33,
+    "model": "products.product",
+    "fields": {
+      "sku": "33",
+      "name": "Mersin Eco-friendly Ultra Soft Chevron Towel Pink",
+      "description": "Pink can be romantic, joyful and sweet... For us is pure charming sustainability! A soft as it can be, Mersin pink will become the best accessory you can have, and the best gift you can give... Our towels are made from 50% of regenerated cotton, that makes them more durable and soft. Because the more you wash and use them, the softer they get.",
+      "price": 38.40,
+      "category": 5,
+      "rating": 4.7,
+      "image": "clothing_pink_towel7.jpg"
+    }
+  },
+    {
+    "pk": 34,
+    "model": "products.product",
+    "fields": {
+      "sku": "34",
+      "name": "Musical Beanie Bluetooth Hat",
+      "description": "The Musical Beanie can even answer phone and lets you make calls using the built in mic. Get a crystal clear sound waves as well as protection from windy weather this winter with this Bluetooth enabled beanie..",
+      "price": 49.95,
+      "category": 5,
+      "rating": 4.4,
+      "image": "clothing_hat_8.jpg"
+    }
+  },
+    {
+    "pk": 35,
+    "model": "products.product",
+    "fields": {
+      "sku": "35",
+      "name": "Yalova Eco-friendly Ultra Soft Marbled Blanket Throw - Yellow",
+      "description": "Yellow mellow... Yes!  This beautiful blanket was handcrafted with care according to the Turkish ancient tradition to bring joy. Our blankets are made from 50% recycled cotton, that makes them more durable and soft.",
+      "price": 65.00,
+      "category": 5,
+      "rating": 5.0,
+      "image": "clothing_blanket9.jpg"
+    }
+  },
+    {
+    "pk": 36,
+    "model": "products.product",
+    "fields": {
+      "sku": "36",
+      "name": "Emerson Quote Enamel Mug",
+      "description": "Every happy camper needs a unique camper mug. It's lightweight, durable and multifunctional. Use it for your favorite beverage or a hot meal, and attach it to your bag for easy access on a hike.",
+      "price": 18.10,
+      "category": 6,
+      "rating": 4.6,
+      "image": "gifts_enamel_mug1.jpg"
+    }
+  },
+    {
+    "pk": 37,
+    "model": "products.product",
+    "fields": {
+      "sku": "37",
+      "name": "Macrame Mountaineer Hammock | White & Navy",
+      "description": "Kick back with comfort and ease after a long day with our Mountaineer Hammock. This lightweight and portable hammock is ideal for adventures in the mountains, the beach, or in the comfort of your backyard.",
+      "price": 89.78,
+      "category": 6,
+      "rating": 4.5,
+      "image": "gift_eco_hammock2.jpg"
+    }
+  },
+    {
+    "pk": 38,
+    "model": "products.product",
+    "fields": {
+      "sku": "38",
+      "name": "Double/Single Portable Hammock Set",
+      "description": "Double Hammock with tree straps. Strong compact and lightweight. Adjustable heavy duty tree straps. Easy installation and multiple uses",
+      "price": 25.99,
+      "category": 6,
+      "rating": 4.8,
+      "image": "gifts_portablehammoc3.jpg"
+    }
+  },
+    {
+    "pk": 39,
+    "model": "products.product",
+    "fields": {
+      "sku": "39",
+      "name": "Carl Sagan Quote EcoTote Bag",
+      "description": "Say goodbye to plastic, and bag your goodies in this organic cotton tote bag. There’s more than enough room for groceries, books, and anything in between.",
+      "price": 20.00,
+      "category": 6,
+      "rating": 4.7,
+      "image": "gifts_eco_tote_bag4.jpg"
+    }
+  },
+    {
+    "pk": 40,
+    "model": "products.product",
+    "fields": {
+      "sku": "40",
+      "name": "Edward Abbey Quote EcoTote Bag",
+      "description": "Say goodbye to plastic, and bag your goodies in this organic cotton tote bag. There’s more than enough room for groceries, books, and anything in between.",
+      "price": 20.00,
+      "category": 6,
+      "rating": 4.6,
+      "image": "gifts_another_totebag_5.jpg"
+    }
+  },
+    {
+    "pk": 41,
+    "model": "products.product",
+    "fields": {
+      "sku": "41",
+      "name": "Nica Hammock",
+      "description": "Relax in our beautifully and carefully crafted hammocks made from 100% cotton and wood. Both the Single and Double Knotted hammocks are handmade in Nicaragua and designed to be extremely comfortable, long-lasting, and unique additions to your space. Our skilled artisans use twice the amount of time and textile in crafting the Double Knotted option, making it our most luxurious hammock available!",
+      "price": 141.49,
+      "category": 6,
+      "rating": 4.8,
+      "image": "gifts_nisahammock6.jpg"
+    }
+  },
+    {
+    "pk": 42,
+    "model": "products.product",
+    "fields": {
+      "sku": "42",
+      "name": "One Person Peregrine Refuge Lite Hammock",
+      "description": "For the cost or weight conscious traveler, this hammock is just 15oz. 250 lb capacity. CE Certified climbing carabiners. Hammock made from lightweight 70d nylon. Drawcord storage sack doubles as a storage pocket  for your book, tablet, or smart phone while lounging.",
+      "price": 78.00,
+      "category": 6,
+      "rating": 4.4,
+      "image": "gifts_refugehammock7.jpg"
+    }
+  },
+    {
+    "pk": 43,
+    "model": "products.product",
+    "fields": {
+      "sku": "43",
+      "name": "Mobile Dog Gear Dogssentials Drawstring Cinch Sack",
+      "description": "Mobile Dog Gear's Dogssentials travel drawstring sack will allow you to bring both you and your dog's essentials with you while on the go! Drawstring backpack features include: Easy drawstring cinch closure, carabiner loop, large pocket that fits your dog's frisbee, durable drawstring straps, waste bag dispenser, deep side pockets for water bottles and large mesh front pocket for your phone, keys and wallet. The top completely cinches closed so you won't have to worry about items falling out. There is a heavy duty handle loop so you can hang up your dog bag as soon as you walk through the door. We've also taken away the worry of searching around the bottom of the bag for waste bags. The convenient waste bag dispenser is located at the bottom side of the bag, so you can simply reach around while walking and grab the waste bags and you are good to go! This walking bag is made with durable ballistic fabric which is resistant to ripping and tearing. The heavy duty drawstrings are reinforced with metal grommets. The lightweight fabric won't weigh you down, making it perfect for long walks or even hiking! No more lugging around heavy bags or backpacks that will leave your arms and back aching. This dog bag is perfect for carrying essentials such as water bottles, dog toys, doggy bags, leash and all of your must have items!",
+      "price":35.99 ,
+      "category": 7,
+      "rating": 4.9,
+      "image": "gifts_do_essentials8.jpg"
+    }
+  },
+    {
+    "pk": 44,
+    "model": "products.product",
+    "fields": {
+      "sku": "44",
+      "name": "Luxe Pup® Collapsible Silicone Travel Bowl Set (33oz)",
+      "description": "Large collapsible and expandable travel bowl for your furry friend's hydration and feeding needs. Set Includes Travel Bowl + Silicone Carrier with Carabiner Clip for easy attachment to Luxe Hydration Water Bottles (or similar). Made from food grade BPA-free Silicone",
+      "price": 12.99,
+      "category": 7,
+      "rating": 4.6,
+      "image": "dog_collapsible_bowl.jpg"
+    }
+  },
+    {
+    "pk": 45,
+    "model": "products.product",
+    "fields": {
+      "sku": "45",
+      "name": "SN Asteroid Ultra Durable Rubber Chew Toy - Large - Red",
+      "description": "DOG BALL: Stimulating and entertaining for dogs with its unique design for erratic bounce. The solid natural rubber design provides strength yet enough give to hold up while still stimulating their chompers. Spotnik's all natural  rubber compound is FDA compliant, non-toxic and biodegradable. It is sustainably harvested helping us reduce our carbon footprint. Animal and planet friendly!",
+      "price": 16.99,
+      "category": 7,
+      "rating": 4.2,
+      "image": "dog_rubber_chew_toy.jpg"
+    }
+  },
+    {
+    "pk": 46,
+    "model": "products.product",
+    "fields": {
+      "sku": "46",
+      "name": "Buddy's Travel Bowl for Hiking & Long Walks (For Your Dog Buddy!)",
+      "description": "Travel dog bowl by Equinox, folds and snaps in on itself for compact travel.  Made in USA.  Perfect for those long walks or hikes when your buddy goes along!",
+      "price": 35.00,
+      "category": 7,
+      "rating": 4.8,
+      "image": "dog_travel_bowl.jpg"
+    }
+  }
+  ]
