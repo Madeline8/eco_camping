@@ -16,9 +16,9 @@
       </a>
       <!-- Filter By -->
       <div class="dropdown-menu border-0 dropdown-menu-lg-right" aria-labelledby="shop-all-link">
-        <a class="dropdown-item text-dark" href="#">By Price</a>
-        <a class="dropdown-item text-dark" href="#">By Rating</a>
-        <a class="dropdown-item text-dark" href="#">By Category</a>
+        <a class="dropdown-item text-dark" href="{% url 'products' %}?sort=price&direction=asc">By Price</a>
+        <a class="dropdown-item text-dark" href="{% url 'products' %}?sort=rating&direction=desc">By Rating</a>
+        <a class="dropdown-item text-dark" href="{% url 'products' %}?sort=category&direction=asc">By Category</a>
         <a class="dropdown-item text-dark" href="{% url 'products' %}">All Products</a>
       </div>
     </li>
