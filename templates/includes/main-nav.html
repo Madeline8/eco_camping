@@ -29,13 +29,13 @@
         Camping Gear
       </a>
       <div class="dropdown-menu dropdown-menu-lg-right border-0" aria-labelledby="camping-gear-link">
-        <a class="dropdown-item text-dark" href="#">Tents</a>
-        <a class="dropdown-item text-dark" href="#">Sleeping Bags</a>
-        <a class="dropdown-item text-dark" href="#">Lightning &amp; Electronics</a>
-        <a class="dropdown-item text-dark" href="#">Camp Kitchen Gear</a>
-        <a class="dropdown-item text-dark" href="#">Camping Clothing</a>
-        <a class="dropdown-item text-dark" href="#">New Arrivals</a>
-        <a class="dropdown-item text-dark" href="#">All Camping Gear</a>
+        <a class="dropdown-item text-dark" href="{% url 'products' %}?category=tents">Tents</a>
+        <a class="dropdown-item text-dark" href="{% url 'products' %}?category=sleeping_bags">Sleeping Bags</a>
+        <a class="dropdown-item text-dark" href="{% url 'products' %}?category=lightning_and_electronics">Lightning &amp; Electronics</a>
+        <a class="dropdown-item text-dark" href="{% url 'products' %}?category=camp_kitchen_gear">Camp Kitchen Gear</a>
+        <a class="dropdown-item text-dark" href="{% url 'products' %}?category=camping_clothing">Camping Clothing</a>
+        <a class="dropdown-item text-dark" href="{% url 'products' %}?category=new_arrivals">New Arrivals</a>
+        <a class="dropdown-item text-dark" href="{% url 'products' %}?category=tents,sleeping_bags,lightning_electronics,camp_kitchen_gear,camping_clothing,new_arrivals">All Camping Gear</a>
       </div>
     </li>
     <li class="list-inline-item nav-item dropdown">
@@ -44,9 +44,9 @@
         Gift Ideas
       </a>
       <div class="dropdown-menu dropdown-menu-lg-right border-0" aria-labelledby="gift-ideas-link">
-        <a class="dropdown-item text-dark" href="#">Giftable Gear</a>
-        <a class="dropdown-item text-dark" href="#">Dog Toys &amp; Gear</a>
-        <a class="dropdown-item text-dark" href="#">All Gift Ideas</a>
+        <a class="dropdown-item text-dark" href="{% url 'products' %}?category=giftable_gear">Giftable Gear</a>
+        <a class="dropdown-item text-dark" href="{% url 'products' %}?category=dog_toys_and_gear">Dog Toys &amp; Gear</a>
+        <a class="dropdown-item text-dark" href="{% url 'products' %}?category=giftable_gear,dog_toys_and_gear">All Gift Ideas</a>
       </div>
     </li>
     <!-- Search  -->
