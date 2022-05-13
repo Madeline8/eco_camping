@@ -16,8 +16,8 @@
 <!-- Account and Shopping Cart  -->
 <li class="list-inline-item d-block d-lg-none">
   <a class="nav-link text-dark" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <div class="text-center">
-      <div><i class="fas fa-user fa-lg header-icon-link"></i></div>
+    <div class="text-center header-icon-link">
+      <div><i class="fas fa-user fa-lg"></i></div>
       <p class="my-0">My Account</p>
     </div>
   </a>
@@ -36,8 +36,8 @@
 </li>
 <li class="list-inline-item d-block d-lg-none">
   <a class="{% if grand_total %}font-weight-bold{% else %}text-dark{% endif %} nav-link" href="">
-    <div class="text-center">
-      <div><i class="fas fa-shopping-bag fa-lg header-icon-link"></i></div>
+    <div class="text-center header-icon-link">
+      <div><i class="fas fa-shopping-bag fa-lg"></i></div>
       <p class="my-0">
         {% if grand_total %}
         ${{ grand_total|floatformat:2 }}

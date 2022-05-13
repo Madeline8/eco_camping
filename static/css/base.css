@@ -71,19 +71,27 @@ div .header-icon-link {
 div .header-icon-link:hover,
 div .header-icon-link:active,
 div .header-icon-link:focus {
-  color: #01796f;
+  color: #ff4500;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
 }
 
 .btn-style {
   background-color: #004040;
   border: 1px solid #01796f;
   color: #ecf5ec;
+  transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -webkit-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
 }
 
 .btn-style:hover,
 .btn-style:active,
 .btn-style:focus {
-  background-color: #01796f;
+  background-color: #ff4500;
   border: 1px solid #004040;
   color: #ecf5ec;
 }
@@ -145,16 +153,37 @@ hr {
   border: 1px solid #004040;
   background: #FBFCF8;
   color: #004040;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
 }
 
 .btn-light-screen:hover,
 .btn-shop-now:hover {
-  background: #004040;
+  background: #ff4500;
   color: #FBFCF8;
   font-weight:300;
 }
 
-/* --------------------------------Homepage */
+/* category badge style  */
+a.category-badge > span.badge {
+  border: 1px solid #004040;
+  background: #FBFCF8;
+  color: #004040;
+  transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -webkit-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+}
+
+
+a.category-badge > span.badge:hover {
+  background:rgba(255, 69, 0, 1)!important;
+  color: #FBFCF8!important;
+}
+
+/* ----------------------------Homepage */
 
 /* .banner-img {
     background: url('/media/homepage_img.jpg');
@@ -203,6 +232,32 @@ hr {
 
 /* ---------------------------/Homepage */
 
+/*------------ Products Page ----------- */
+
+/* info taken from https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/  */
+.shopall-text-muted {
+  font-weight: 800;
+  color: #004040;
+  overflow: hidden;
+  background: linear-gradient(to right, #ff4500, #ff4500 50%, #004040 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  text-decoration: none;
+
+}
+
+.shopall-text-muted:hover {
+  background-position: 0 100%;
+}
+
+
+/*------------ /Products Page ----------- */
+
+
 /* Footer  */
 
 footer {
@@ -227,16 +282,16 @@ h6 .footer-link:hover {
   text-align: center;
   color: #004040;
   transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.30s ease-in-out;
-  -webkit-transition: all 0.30s ease-in-out;
-  -o-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
 }
 
 .social-links li a i:hover {
-  color: #01796f;
+  color: #ff4500;
 }
 
-.footer-suscribe {
+.footer-subscribe {
   display: block;
 }
 
