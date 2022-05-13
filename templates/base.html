@@ -66,7 +66,7 @@
           </form>
         </div>
 
-        <!-- My Account and Shopping Cart  -->
+        <!-- My Account and Shopping Bag  -->
         <div class="col-12 col-lg-4 my-auto">
           <ul class="list-inline text-center ml-auto">
 
@@ -92,7 +92,7 @@
               </div>
             </li>
             <li class="list-inline-item">
-              <a class="{% if grand_total %}font-weight-bold{% else %}text-dark{% endif %} nav-link" href="">
+              <a class="{% if grand_total %}font-weight-bold{% else %}text-dark{% endif %} nav-link" href="{% url 'view_bag' %}">
                 <div class="text-center header-icon-link">
                   <div><i class="fas fa-shopping-bag fa-lg "></i></div>
                   <p class="my-0">
