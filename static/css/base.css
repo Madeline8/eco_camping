@@ -166,6 +166,24 @@ hr {
   font-weight:300;
 }
 
+.shopping-btn {
+  border: 1px solid #004040;
+  background: #004040;
+  color: #FBFCF8;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+.shopping-btn:hover {
+  border: 1px solid #004040;
+  background: #01796f;
+  color: #FBFCF8;
+  font-weight: 300;
+
+}
+
 /* category badge style  */
 a.category-badge > span.badge {
   border: 1px solid #004040;
