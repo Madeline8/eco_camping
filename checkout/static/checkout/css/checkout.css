@@ -1,0 +1,48 @@
+.StripeElement,
+.stripe-style-input {
+box-sizing: border-box;
+height: 40px;
+padding: 10px 12px;
+border: 1px solid transparent;
+border-radius: 0px;
+background-color: white;
+box-shadow: 0 1px 4px 0 #004040;
+-webkit-transition: box-shadow 150ms ease;
+transition: box-shadow 150ms ease;
+
+}
+
+.StripeElement--focus,
+.stripe-style-input:focus,
+.stripe-style-input:active {
+  box-shadow: 0 1px 4px 0 #01796f;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.stripe-style-input::placeholder {
+    color: #aab7c4;
+}
+
+.fieldset-label {
+    position: relative;
+    right: .5rem;
+}
+
+#payment-form .form-control,
+#card-element {
+    color: #004040;
+    border: 1px solid #004040;
+}
+
+.charge-info {
+  color: #ff4500!important;
+}
+
+
+.grand-total {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
