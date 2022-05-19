@@ -24,22 +24,23 @@ class OrderForm(forms.ModelForm):
             'street_address1': 'Street Address 1',
             'street_address2': 'Street Address 2',
             'town_or_city': 'Town or City',
-            'county': 'County',
+            'county': 'County, State or Locality',
             'postcode': 'Postal Code',
-            'country': 'Country',
         }
+
 
         # Set cursor to the full name field
         self.fields['full_name'].widget.attrs['autofocus'] = True
         # iterate through form fields 
         for field in self.fields:
-            # add * to placeholder if the field is mandatory 
-            if self.fields[field].required:
-                placeholder = f'{placeholders[field]} *'
-            else:
-                placeholder = placeholders[field]
+            if field != 'country':
+                # add * to placeholder if the field is mandatory 
+                if self.fields[field].required:
+                    placeholder = f'{placeholders[field]} *'
+                else:
+                    placeholder = placeholders[field]
                 # Set all placeholder attributes to the values in the dictionary above
-            self.fields[field].widget.attrs['placeholder'] = placeholder
+                self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
-            # Remove form fields labels
+             # Remove form fields labels
             self.fields[field].label = False

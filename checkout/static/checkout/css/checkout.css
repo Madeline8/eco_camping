@@ -47,6 +47,16 @@ transition: box-shadow 150ms ease;
   font-weight: 400;
 }
 
+select,
+select option {
+    color: #1f2812;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #aab7c4 !important;
+}
+
 /* Style loading spinner  */
 #loading-overlay {
 	display: none;
