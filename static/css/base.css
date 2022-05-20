@@ -425,6 +425,19 @@ border-top: shadow p-3 mb-5 rounded;
 
 /* /Footer  */
 
+/* Form formatting  */
+
+.form-control {
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  background-color: white;
+  box-shadow: 0 1px 4px 0 #004040;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+  }
+
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
