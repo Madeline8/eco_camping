@@ -1,0 +1,18 @@
+.profile-form-input::placeholder {
+    color: #aab7c4;
+  }
+
+  #profile-update-form .form-control {
+    color: #004040;
+}
+
+/* make the country option field dark green by default  */
+#id_default_country,
+#id_default_country option:not(:first-child) {
+    color: #004040;
+}
+
+/* make the first option element the color of the placeholder  */
+#id_default_country option:first-child {
+    color: #aab7c4;
+}
