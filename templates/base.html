@@ -1,149 +1,163 @@
 {% load static %}
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     {% block meta %}
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="EcoCamping online store selling environmentally friendly camping gear. ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="EcoCamping online store selling environmentally friendly camping gear. ">
     {% endblock %}
-    
+
     {% block extra_meta %}
     {% endblock %}
 
     {% block corecss %}
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="{% static 'css/base.css' %}">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Lato:wght@700&family=Montserrat:wght@400;500;600&family=Palanquin+Dark&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Lato:wght@700&family=Montserrat:wght@400;500;600&family=Palanquin+Dark&display=swap"
+        rel="stylesheet">
     {% endblock %}
 
     {% block extra_css %}
     {% endblock %}
 
     {% block corejs %}
-        <script src="https://kit.fontawesome.com/48c5969d7a.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <!-- Stripe  -->
-        <script src="https://js.stripe.com/v3/"></script>
-      
+    <script src="https://kit.fontawesome.com/48c5969d7a.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <!-- Stripe  -->
+    <script src="https://js.stripe.com/v3/"></script>
+
     {% endblock %}
 
     {% block extrajs %}
     {% endblock %}
 
     <title>Eco Camping {% block extra_title %}{% endblock %}</title>
-  </head>
-  <body>
+</head>
+
+<body>
 
     <!-- Navigation  -->
     <header class="container-fluid fixed-top">
-      <div id="navigation-top" class="row pt-lg-2 d-none d-lg-flex">
-        <!-- EcoCamping Logo  -->
-        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-lg-left main-logo  text-center text-lg-left">
-          <a href="{% url 'home' %}" class="nav-link">
-            <h2 class="logo-style my-0">
-              <span id="eco-style">Eco</span><span id="camping-style">Camping</span>
-            </h2>
-          </a>
-        </div>
-        <!-- Search Bar  -->
-        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-          <form method="GET" action="{% url 'products' %}">
-            <div class="input-group w-100 search-box">
-                <div class="text-center">
-                    <input type="text" name="q" class="search-input form-control rounded-0" placeholder="Search our site"/>
-                </div>
-                <div class="input-group-append">
-                    <button type="submit" class="btn-style btn form-control rounded-0">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
+        <div id="navigation-top" class="row pt-lg-2 d-none d-lg-flex">
+            <!-- EcoCamping Logo  -->
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-lg-left main-logo  text-center text-lg-left">
+                <a href="{% url 'home' %}" class="nav-link">
+                    <h2 class="logo-style my-0">
+                        <span id="eco-style">Eco</span><span id="camping-style">Camping</span>
+                    </h2>
+                </a>
             </div>
-          </form>
-        </div>
+            <!-- Search Bar  -->
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                <form method="GET" action="{% url 'products' %}">
+                    <div class="input-group w-100 search-box">
+                        <div class="text-center">
+                            <input type="text" name="q" class="search-input form-control rounded-0"
+                                placeholder="Search our site" />
+                        </div>
+                        <div class="input-group-append">
+                            <button type="submit" class="btn-style btn form-control rounded-0">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
 
-        <!-- My Account and Shopping Bag  -->
-        <div class="col-12 col-lg-4 my-auto">
-          <ul class="list-inline text-center ml-auto">
+            <!-- My Account and Shopping Bag  -->
+            <div class="col-12 col-lg-4 my-auto">
+                <ul class="list-inline text-center ml-auto">
 
-            <li class="list-inline-item dropdown">
-              <a class="nav-link text-dark" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                <div class="text-center header-icon-link">
-                  <div><i class="fas fa-user fa-lg "></i></div>
-                  <p class="my-0">My Account</p>
-                </div>
-              </a>
-              <div class="dropdown-menu border-0 dropdown-menu-lg-right" aria-labelledby="user-options">
-                {% if request.user.is_authenticated %}
-                {% if request.user.is_superuser %}
-                <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                {% endif %}
-                <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                {% else %}
-                <a href="{% url 'account_signup' %}" class="dropdown-item">Sign Up</a>
-                <a href="{% url 'account_login' %}" class="dropdown-item">Sign In</a>
-                {% endif %}
-              </div>
-            </li>
-            <li class="list-inline-item">
-              <a class="{% if grand_total %}font-weight-bold{% else %}text-dark{% endif %} nav-link" href="{% url 'view_bag' %}">
-                <div class="text-center header-icon-link">
-                  <div><i class="fas fa-shopping-bag fa-lg "></i></div>
-                  <p class="my-0">
-                    {% if grand_total %}
-                    £{{ grand_total|floatformat:2 }}
-                    {% else %}
-                    £0.00
-                    {% endif %}
-                  </p>
-                </div>
-              </a>
-            </li>
-          </ul>
+                    <li class="list-inline-item dropdown">
+                        <a class="nav-link text-dark" href="#" id="user-options" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <div class="text-center header-icon-link">
+                                <div><i class="fas fa-user fa-lg "></i></div>
+                                <p class="my-0">My Account</p>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu border-0 dropdown-menu-lg-right" aria-labelledby="user-options">
+                            {% if request.user.is_authenticated %}
+                            {% if request.user.is_superuser %}
+                            <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                            {% endif %}
+                            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            {% else %}
+                            <a href="{% url 'account_signup' %}" class="dropdown-item">Sign Up</a>
+                            <a href="{% url 'account_login' %}" class="dropdown-item">Sign In</a>
+                            {% endif %}
+                        </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="{% if grand_total %}font-weight-bold{% else %}text-dark{% endif %} nav-link"
+                            href="{% url 'view_bag' %}">
+                            <div class="text-center header-icon-link">
+                                <div><i class="fas fa-shopping-bag fa-lg "></i></div>
+                                <p class="my-0">
+                                    {% if grand_total %}
+                                    £{{ grand_total|floatformat:2 }}
+                                    {% else %}
+                                    £0.00
+                                    {% endif %}
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <!-- Responsive design  -->
-      <div class="row">
-        <nav class="navbar navbar-expand-lg navbar-light w-100">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          {% include 'includes/main-nav.html' %}
-          {% include 'includes/mobile-top-header.html' %}
-        </nav>
-      </div>
-      <!-- Delivery Banner  -->
-      <div class="row text-center delivery-banner">
-        <div class="col bg-dark-green white-text">
-          <h4 class="my-1 text-center uppercase-text">Free delivery on orders over £{{ free_delivery_threshold }}!</h4>
+        <!-- Responsive design  -->
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light w-100">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                {% include 'includes/main-nav.html' %}
+                {% include 'includes/mobile-top-header.html' %}
+            </nav>
         </div>
-      </div>
+        <!-- Delivery Banner  -->
+        <div class="row text-center delivery-banner">
+            <div class="col bg-dark-green white-text">
+                <h4 class="my-1 text-center uppercase-text">Free delivery on orders over £{{ free_delivery_threshold }}!
+                </h4>
+            </div>
+        </div>
     </header>
 
     {% if messages %}
     <div class="message-container">
-      {% for message in messages %}
-          {% with message.level as level %}
-              {% if level == 40 %}
-                  {% include 'includes/toasts/toast_error.html' %}
-              {% elif level == 30 %}
-                  {% include 'includes/toasts/toast_warning.html' %}
-              {% elif level == 25 %}
-                  {% include 'includes/toasts/toast_success.html' %}
-              {% else %}
-                  {% include 'includes/toasts/toast_info.html' %}
-              {% endif %}
-          {% endwith %}
-      {% endfor %}
-  </div>
+        {% for message in messages %}
+        {% with message.level as level %}
+        {% if level == 40 %}
+        {% include 'includes/toasts/toast_error.html' %}
+        {% elif level == 30 %}
+        {% include 'includes/toasts/toast_warning.html' %}
+        {% elif level == 25 %}
+        {% include 'includes/toasts/toast_success.html' %}
+        {% else %}
+        {% include 'includes/toasts/toast_info.html' %}
+        {% endif %}
+        {% endwith %}
+        {% endfor %}
+    </div>
     {% endif %}
 
     {% block page_header %}
@@ -154,71 +168,73 @@
 
     {% block postloadjs %}
     <script type="text/javascript">
-      $('.toast').toast('show');
+        $('.toast').toast('show');
     </script>
     {% endblock %}
 
-      <footer class="container-fluid no-gutters footer-border-top">
+    <footer class="container-fluid no-gutters footer-border-top">
         <div class="row">
-          <div class="col-12 col-md-4 text-center">
-              <h5 class="text-dark">Customer Care</h5>
-              <p class="block">
-                <h6> <a class="footer-link" href="">Contact Us</a></h6>
-                <h6> <a class="footer-link" href="">Privacy Policy</a></h6>
-                <h6> <a class="footer-link" href="">Refund Policy</a></h6>
-                <h6> <a class="footer-link" href="">Terms of Service</a></h6>
-              </p>                    
-          </div>
+            <div class="col-12 col-md-4 text-center">
+                <h5 class="text-dark">Customer Care</h5>
+                <p class="block">
+                    <h6> <a class="footer-link" href="">Contact Us</a></h6>
+                    <h6> <a class="footer-link" href="">Privacy Policy</a></h6>
+                    <h6> <a class="footer-link" href="">Refund Policy</a></h6>
+                    <h6> <a class="footer-link" href="">Terms of Service</a></h6>
+                </p>
+            </div>
 
-          <div class="col-12 col-md-4 text-center">
-            <h5 class="text-dark">Company</h5>
-            <h6> <a class="footer-link" href="">About Us</a></h6>
-            <h6> <a class="footer-link" href="">Blog</a></h6>                           
-          </div>
+            <div class="col-12 col-md-4 text-center">
+                <h5 class="text-dark">Company</h5>
+                <h6> <a class="footer-link" href="">About Us</a></h6>
+                <h6> <a class="footer-link" href="">Blog</a></h6>
+            </div>
 
-          <div class="col-12 col-md-4 text-center">
-            <h5 class="text-dark">Social</h5>
-            <div>
-              <div class="inline-block">
-                  <ul class="list-inline inline-block social-links">
-                      <li class="list-inline-item">
-                          <a href="https://www.facebook.com/" target="_blank">
-                              <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                              <span class="sr-only">Facebook</span>
-                          </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="https://www.instagram.com/" target="_blank">
-                            <i class="fab fa-instagram" aria-hidden="true"></i>
-                            <span class="sr-only">Instagram</span>
-                        </a>
-                    </li>
-                      <li class="list-inline-item">
-                          <a href="https://twitter.com/" target="_blank">
-                              <i class="fab fa-twitter" aria-hidden="true"></i>
-                              <span class="sr-only">Twitter</span>
-                          </a>
-                      </li>
-                  </ul>
-              </div>
-              <div>
-                <form class="form-inline footer-subscribe">
-                  <label class="sr-only" for="inlineFormInputName2">Name</label>
-                  <input type="text" class=" search-input form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Your Email Address">             
-                  <button type="submit" class="btn btn-light-screen mb-2 rounded-0">Subscribe</button>
-                </form>
-              </div>
-          </div>                                        
-          </div>
+            <div class="col-12 col-md-4 text-center">
+                <h5 class="text-dark">Social</h5>
+                <div>
+                    <div class="inline-block">
+                        <ul class="list-inline inline-block social-links">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                    <span class="sr-only">Facebook</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                                    <span class="sr-only">Instagram</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/" target="_blank">
+                                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                                    <span class="sr-only">Twitter</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <form class="form-inline footer-subscribe">
+                            <label class="sr-only" for="inlineFormInputName2">Name</label>
+                            <input type="text" class=" search-input form-control mb-2 mr-sm-2" id="inlineFormInputName2"
+                                placeholder="Your Email Address">
+                            <button type="submit" class="btn btn-light-screen mb-2 rounded-0">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="copyright row no-gutters white-text">
-          <div class="col-12 text-center">
-            <p class="my-auto">&copy; 2022 Created By Magdalena Slapek</p>            
-          </div>
+            <div class="col-12 text-center">
+                <p class="my-auto">&copy; 2022 Created By Magdalena Slapek</p>
+            </div>
         </div>
 
-      </footer>
+    </footer>
 
     <script src="static/js/script.js"></script>
-  </body>
+</body>
+
 </html>
