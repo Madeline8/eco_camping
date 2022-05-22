@@ -78,19 +78,6 @@
     }
   },
     {
-    "pk": 7,
-    "model": "products.product",
-    "fields": {
-      "sku": "7",
-      "name": "Settler 15 F Sleeping Bag",
-      "description": "Sleep and relax in the SETTLER 15 F sleeping bag after an exciting day outdoors. An ideal 3 season sleeping bag for backpacking, camping, mountaineering, expeditions or hiking trips.",
-      "price": 136.99,
-      "category": 2,
-      "rating": 4.7,
-      "image": "sleeping_bag_settler_1.jpg"
-    }
-  },
-    {
     "pk": 8,
     "model": "products.product",
     "fields": {
@@ -153,19 +140,6 @@
       "category": 2,
       "rating": 4.9,
       "image": "sleeping_bag_zero_6.jpg"
-    }
-  },
-    {
-    "pk": 13,
-    "model": "products.product",
-    "fields": {
-      "sku": "13",
-      "name": "Coast EAL12 Black/White Emergency Lantern",
-      "description": "Whether you are going camping or preparing for a winter storm, the EAL12 Lantern is a great compact lantern that because of the split handle can be easily hung on a branch or line. Cycle between high, low, solid red, and flashing red modes to best suit your situation. (4 x AA batteries not included) With Coast?ÇÖs commitment to quality, the EAL12 Lantern is impact resistant, weather resistant and its LEDs are virtually unbreakable. The EAL12 Lantern is backed by Coast?ÇÖs five-year warranty against defects in materials and workmanship.",
-      "price": 95.20,
-      "category": 3,
-      "rating": 4.7,
-      "image": "lightning_coast_1.jpg"
     }
   },
     {
@@ -426,19 +400,6 @@
       "category": 5,
       "rating": 4.7,
       "image": "clothing_pink_towel7.jpg"
-    }
-  },
-    {
-    "pk": 34,
-    "model": "products.product",
-    "fields": {
-      "sku": "34",
-      "name": "Musical Beanie Bluetooth Hat",
-      "description": "The Musical Beanie can even answer phone and lets you make calls using the built in mic. Get a crystal clear sound waves as well as protection from windy weather this winter with this Bluetooth enabled beanie..",
-      "price": 49.95,
-      "category": 5,
-      "rating": 4.4,
-      "image": "clothing_hat_8.jpg"
     }
   },
     {
