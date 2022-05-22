@@ -528,8 +528,9 @@ color:#01796f; /* text-info */
   border-radius: 0;
 }
 
-/* ---------------------------Media Queries */
+/* ---------------------------MEDIA QUERIES */
 
+/* EXTRA LARGE DEVICES (LARGE DESKTOPS, 1200PX AND UP)  */
 @media (min-width: 1200px) {
     
   /* To use up space appropriately - taken from CI video E010 */
@@ -538,6 +539,7 @@ color:#01796f; /* text-info */
   }
 }
 
+/* LARGE DEVICES (DESKTOPS, 992X AND UP) */
 @media (min-width: 992px) {
 /* to style fixed top - taken from CI video */
 .fixed-top-desktop-only {
@@ -561,9 +563,10 @@ color:#01796f; /* text-info */
 }
 }
 
-/* Mobiles and medium size screens  */
-/* pad the top a bit when navbar is collapsed on mobile - taken form CI video*/
+/* MOBILES AND MEDIUM SIZE SCREENS  */
 @media (max-width: 991px) {
+
+  /* pad the top a bit when navbar is collapsed on mobile - taken form CI video*/
   .header-container {
     padding-top: 100px;
   }
@@ -576,6 +579,39 @@ color:#01796f; /* text-info */
   .delivery-banner h4 {
     font-size: .9rem;
 }
+
+.nav-link {
+  padding: 0.20rem;
+}
+
+.nav-link i.fa-lg {
+  font-size: 1rem;
+}
+
+.navbar-toggler {
+  padding: .6rem .6rem;
+  font-size: 1rem;
+}
+
+a.btn.shopping-btn,
+.btn.shoppping-btn,
+.btn.btn-light-screen,
+input.btn.btn-light-screen,
+.btn.btn-shop-now,
+.btn.btn-allauth,
+.button.primaryAction.btn,
+.btn.rounded-0
+ {
+    padding: .375rem .375rem;
+    font-size: .85rem;
+}
+
+
+/* Exception to ignore the button size set as above  */
+.increment-qty, .decrement-qty {
+  padding: .25rem .5rem !important;
+}
+
 
 }
 
