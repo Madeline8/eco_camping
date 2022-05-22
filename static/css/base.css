@@ -606,6 +606,11 @@ input.btn.btn-light-screen,
     font-size: .85rem;
 }
 
+div .grand-total,
+.grand-total strong {
+  font-size: 1.3rem;
+}
+
 
 /* Exception to ignore the button size set as above  */
 .increment-qty, .decrement-qty {
