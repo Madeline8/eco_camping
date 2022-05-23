@@ -55,5 +55,22 @@ def contact(request):
 
 
 def newsletter_subscribe(request):
+    """
+    View to subscribe to a newsletter. 
+    """
+    url = request.META.get('HTTP_REFERER')
+    newsletter_form = SubscriptionForm(request.POST)
+    if newsletter_form.is_valid():
+            newsletter_form.save()
+            messages.success(
+                request,
+                "Thank you! You have now subscribed to our newsletter."
+            )
+            return HttpResponseRedirect(url)
+    else:
+        messages.error(
+            request,
+            "Ops, something has gone wrong. Please make sure the email address is correct."
+        )
+        return HttpResponseRedirect(url)
 
-    print('testing views')
