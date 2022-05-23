@@ -1,0 +1,14 @@
+Hello {{ data.name }}
+
+Thank you for contacting us.
+
+Your message:
+"{{ data.message }}"
+
+We will respond to you within 2 business days.
+
+If you have any immediate questions or feedback please call us on +44 020 333 333.
+
+Sincerely
+
+EcoCamping

@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Contact(models.Model):
-    """Model to send a message and keep it on the database"""
+    """Model to send a message and log it in the database"""
     full_name = models.CharField(max_length=50, null=False, blank=False)
     email = models.EmailField(max_length=80, null=False, blank=False)
     subject = models.CharField(max_length=50, null=False, blank=False)
