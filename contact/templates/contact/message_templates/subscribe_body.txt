@@ -1,10 +1,10 @@
-Hello {{ data.name }}
+Hello {{ data.email }}
 
 Thank you for subscribing to our newsletter!
 
 You will get an email from us with offers, new products and news on the first day of every month.
 
-You ca always call us on +44 020 333 333.
+You can always call us on +44 020 333 333.
 
 
 Sincerely
