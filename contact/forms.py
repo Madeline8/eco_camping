@@ -1,5 +1,5 @@
 from django import forms
-from .models import Contact
+from .models import Contact, NewsletterSubscription
 
 
 class ContactForm(forms.ModelForm):
@@ -28,3 +28,20 @@ class ContactForm(forms.ModelForm):
             self.fields[field].widget.attrs['placeholder'] = placeholder
             # Set css 
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
+
+
+class SubscriptionForm(forms.ModelForm):
+    """
+    Create a form for users to subscribe to newsletters
+    """
+
+    class Meta:
+        model = NewsletterSubscription
+        fields = '__all__'
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        self.fields["email"].widget.attrs['class'] = "subscribe-input"
+        self.fields["email"].label = False
+        self.fields["email"].widget.attrs["placeholder"] = "Email *"

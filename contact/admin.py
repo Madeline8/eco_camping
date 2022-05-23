@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Contact
+from .models import Contact, NewsletterSubscription
 
 
 class ContactAdmin(admin.ModelAdmin):
@@ -8,6 +8,12 @@ class ContactAdmin(admin.ModelAdmin):
         'full_name', 'email', 'subject', 'message'
     )
 
-    ordering = ('full_name',)
+
+class SubscriptionAdmin(admin.ModelAdmin):
+    model = NewsletterSubscription
+    list_display = (
+        'email',
+    )
 
 admin.site.register(Contact, ContactAdmin)
+admin.site.register(NewsletterSubscription, SubscriptionAdmin)

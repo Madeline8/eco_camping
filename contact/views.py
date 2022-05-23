@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
-from .models import Contact
-from .forms import ContactForm
+from .models import Contact, NewsletterSubscription
+from .forms import ContactForm, SubscriptionForm
 from django.contrib import messages
 from django.conf import settings
 from django.core.mail import BadHeaderError, send_mail
@@ -52,3 +52,8 @@ def contact(request):
         "form": form
     }
     return render(request, 'contact/contact.html', context)
+
+
+def newsletter_subscribe(request):
+
+    print('testing views')
