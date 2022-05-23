@@ -1,9 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Contact
 from .forms import ContactForm
 from django.contrib import messages
 from django.conf import settings
-from django.core.mail import send_mail
+from django.core.mail import BadHeaderError, send_mail
+from django.http import HttpResponse, HttpResponseRedirect
 from django.template.loader import render_to_string
 
 
@@ -42,7 +43,7 @@ def contact(request):
         else:
             messages.error(
                 request,
-                "Your message could not be sent, please double check the fields"
+                "Your message could not be sent, please make sure all fields are entered and valid."
             )
 
     form = ContactForm()
