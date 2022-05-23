@@ -26,17 +26,23 @@ def contact(request):
             )
             # Email to the sender confirming the message
             data = form.save()
-            subject = render_to_string(
-                'contact/message_templates/subject.txt',
-                {'data': data}
-            )
-            body = render_to_string(
-                'contact/message_templates/message_body.txt',
-                {'data': data}
-            )
+            # subject = render_to_string(
+            #     'contact/message_templates/subject.txt',
+            #     {'data': data}
+            # )
+            # body = render_to_string(
+            #     'contact/message_templates/message_body.txt',
+            #     {'data': data}
+            # )
+            # send_mail(
+            #     subject,
+            #     body,
+            #     settings.DEFAULT_FROM_EMAIL,
+            #     [email],
+            # )
             send_mail(
                 subject,
-                body,
+                message,
                 settings.DEFAULT_FROM_EMAIL,
                 [email],
             )
