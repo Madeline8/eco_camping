@@ -61,12 +61,31 @@ def newsletter_subscribe(request):
     url = request.META.get('HTTP_REFERER')
     newsletter_form = SubscriptionForm(request.POST)
     if newsletter_form.is_valid():
-            newsletter_form.save()
-            messages.success(
-                request,
-                "Thank you! You have now subscribed to our newsletter."
+        newsletter_form.save()
+        messages.success(
+            request,
+            "Thank you! You have now subscribed to our newsletter. Email confirmation has been sent to you. "
             )
-            return HttpResponseRedirect(url)
+
+        # Confirm the user has been suscribed via email
+        data = newsletter_form.save()
+        subscriber_email_address = data.email
+        subject = render_to_string(
+            'contact/message_templates/'
+            'subscribe_subject.txt',
+        )
+        body = render_to_string(
+            'contact/message_templates/'
+            'subscribe_body.txt',
+            {'data': data}
+        )
+        send_mail(
+            subject,
+            body,
+            settings.DEFAULT_FROM_EMAIL,
+            [subscriber_email_address],
+        )
+        return HttpResponseRedirect(url)
     else:
         messages.error(
             request,
