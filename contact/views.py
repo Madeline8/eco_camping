@@ -41,10 +41,10 @@ def contact(request):
             #     [email],
             # )
             send_mail(
-                'subject',
-                'message',
+                subject,
+                message,
                 settings.DEFAULT_FROM_EMAIL,
-                [settings.DEFAULT_FROM_EMAIL],
+                [email],
             )
         else:
             messages.error(
