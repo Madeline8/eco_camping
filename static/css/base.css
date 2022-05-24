@@ -220,6 +220,7 @@ a.category-badge > span.badge:hover {
   position: fixed;
   bottom: 10px;
   right: 10px;
+
 }
 
 .btt-link,
@@ -437,6 +438,11 @@ border-top: shadow p-3 mb-5 rounded;
   box-shadow: 0 1px 4px 0 #004040;
   -webkit-transition: box-shadow 150ms ease;
   transition: box-shadow 150ms ease;
+  }
+
+  .subscribe-form {
+    margin-bottom: 2px;
+    text-align: center!important;
   }
 
 /* Allauth form formatting */
