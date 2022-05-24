@@ -40,12 +40,6 @@ def contact(request):
                 settings.DEFAULT_FROM_EMAIL,
                 [email],
             )
-            # send_mail(
-            #     subject,
-            #     message,
-            #     settings.DEFAULT_FROM_EMAIL,
-            #     [email],
-            # )
         else:
             messages.error(
                 request,
