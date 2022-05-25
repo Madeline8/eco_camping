@@ -100,6 +100,10 @@ div .header-icon-link:focus {
   border: 1px solid #01796f;
 }
 
+.fa-search:before {
+  color: #94c4c0;
+}
+
 .search-input:hover,
 .search-input:active,
 .search-input:focus {
@@ -328,6 +332,14 @@ input[name='q']::placeholder {
   object-position: center center;
 }
 
+#motto-header {
+  font-family: 'Comic Neue', cursive;
+}
+
+#motto-par {
+  font-family: 'Comic Neue', cursive;
+}
+
 .img-container {
   width: 100%;
   padding-right: 0px;
@@ -340,14 +352,13 @@ input[name='q']::placeholder {
   position: absolute;
   bottom: 20%;
   left: 10%;
-  text-align: right;
-  
+  text-align: left;
 }
 
 .shop-now-position {
   position: absolute;
-  bottom: 50%;
-  left: 50%;
+  bottom: 60%;
+  left: 40%;
   text-align: center;
 }
 
@@ -555,22 +566,21 @@ color:#01796f; /* text-info */
   left: 0;
   z-index: 1030;
 }
+}
 
 .header-container {
   padding-top: 164px;
 }
 
-/* Adjust position of Shop Now button  */
-.shop-now-position {
-  position: absolute;
-  bottom: 30%;
-  left: 50%;
-  text-align: center;
-}
-}
-
 /* MOBILES AND MEDIUM SIZE SCREENS  */
 @media (max-width: 991px) {
+
+  /* Adjust positioning of shop button on small screens  */
+  /* .shop-now-position {
+    position: absolute;
+    bottom: 50%;
+    left: 35%;
+  } */
 
   /* pad the top a bit when navbar is collapsed on mobile - taken form CI video*/
   .header-container {
@@ -623,6 +633,9 @@ div .grand-total,
   padding: .25rem .5rem !important;
 }
 
+#shop-now-btn-id {
+  margin-top: 2rem;
+}
 
 }
 
