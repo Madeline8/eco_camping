@@ -150,6 +150,10 @@ hr {
   background: #004040;
 }
 
+.heading-color {
+  color: #01796f;
+}
+
 /* Button styles  */
 
 .btn-light-screen,
@@ -361,6 +365,22 @@ input[name='q']::placeholder {
   left: 40%;
   text-align: center;
 }
+
+/* Info taken from https://www.w3schools.com/howto/howto_css_parallax.asp on parallax scrolling  */
+.img-scroll {
+background-image: url("/media/img-couple.jpg");
+min-height: 350px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
 
 /* ---------------------------/Homepage */
 
@@ -574,13 +594,6 @@ color:#01796f; /* text-info */
 
 /* MOBILES AND MEDIUM SIZE SCREENS  */
 @media (max-width: 991px) {
-
-  /* Adjust positioning of shop button on small screens  */
-  /* .shop-now-position {
-    position: absolute;
-    bottom: 50%;
-    left: 35%;
-  } */
 
   /* pad the top a bit when navbar is collapsed on mobile - taken form CI video*/
   .header-container {
