@@ -22,7 +22,7 @@ def contact(request):
             form.save()
             messages.success(
                 request,
-                f'Thank you for your message, {full_name}!'
+                f'Thank you for your message, {full_name}! A copy has been sent to your email. We will get back to you within 2 business days.'
             )
             # Email to the sender confirming the message
             data = form.save()
