@@ -9,7 +9,8 @@ class OrderForm(forms.ModelForm):
                   'street_address1', 'street_address2',
                   'town_or_city', 'postcode', 'country',
                   'county',)
-    # Customise - override the init method 
+
+    # Customise - override the init method
     def __init__(self, *args, **kwargs):
         """
         Add placeholders and classes, remove auto-generated
@@ -28,13 +29,12 @@ class OrderForm(forms.ModelForm):
             'postcode': 'Postal Code',
         }
 
-
         # Set cursor to the full name field
         self.fields['full_name'].widget.attrs['autofocus'] = True
-        # iterate through form fields 
+        # iterate through form fields
         for field in self.fields:
             if field != 'country':
-                # add * to placeholder if the field is mandatory 
+                # add * to placeholder if the field is mandatory
                 if self.fields[field].required:
                     placeholder = f'{placeholders[field]} *'
                 else:
@@ -42,5 +42,5 @@ class OrderForm(forms.ModelForm):
                 # Set all placeholder attributes to the values in the dictionary above
                 self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
-             # Remove form fields labels
+            # Remove form fields labels
             self.fields[field].label = False

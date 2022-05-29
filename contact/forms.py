@@ -26,7 +26,7 @@ class ContactForm(forms.ModelForm):
             placeholder = f'{placeholders[field]} *'
             # Placeholder will be the same as the value in the dict above
             self.fields[field].widget.attrs['placeholder'] = placeholder
-            # Set css 
+            # Set css
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
 
 
