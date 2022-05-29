@@ -2,11 +2,11 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
@@ -20,7 +20,9 @@
             </div>
             <div class="shop-now-position ">
                 <h4>
-                    <a href="{% url 'products' %}" class="white-text btn-shop-now btn btn-lg rounded-0 text-uppercase py-3" id="shop-now-btn-id">Shop Now</a>
+                    <a href="{% url 'products' %}"
+                        class="white-text btn-shop-now btn btn-lg rounded-0 text-uppercase py-3"
+                        id="shop-now-btn-id">Shop Now</a>
                 </h4>
             </div>
         </div>

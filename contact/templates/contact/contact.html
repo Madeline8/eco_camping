@@ -2,35 +2,35 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="container checkout-container">
-        <div class="row text-center">
-            <div class="col-12 mt-4 text-center">
-                <h2 class="text-uppercase"> Contact Us </h2>
-                <hr class="hr-style-main w-50 mb-1">
-                <h5> Questions? Feedback? <br> We are always happy to hear from You! </h5>
-            </div>
+<div class="container checkout-container">
+    <div class="row text-center">
+        <div class="col-12 mt-4 text-center">
+            <h2 class="text-uppercase"> Contact Us </h2>
+            <hr class="hr-style-main w-50 mb-1">
+            <h5> Questions? Feedback? <br> We are always happy to hear from You! </h5>
         </div>
-
-        <div class="row">
-            <div class="col-12">
-                <form method="POST" action="{% url 'contact' %}" class="form mb-3 input" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    {{ form|crispy }}
-                    <div class="text-center">
-                        <a class="btn btn-allauth rounded-0" href="{% url 'home' %}">Cancel</a>
-                        <button class="btn btn-light-screen rounded-0 text-uppercase" type="submit">Send Message</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-
     </div>
+
+    <div class="row">
+        <div class="col-12">
+            <form method="POST" action="{% url'contact' %}" class="form mb-3 input" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <div class="text-center">
+                    <a class="btn btn-allauth rounded-0" href="{% url 'home' %}">Cancel</a>
+                    <button class="btn btn-light-screen rounded-0 text-uppercase" type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
 {% endblock %}
