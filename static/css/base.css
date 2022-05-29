@@ -376,9 +376,14 @@ min-height: 350px;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.9;
+  height: 200px;
 }
 
-.card-category-tent-img {
+.card-text {
+  font-size: 0.89rem;
+}
+
+/* .card-category-tent-img {
   background-image: url("/media/card-category-tent.jpg");
 }
 
@@ -400,9 +405,18 @@ min-height: 350px;
 
 .card-category-dog-img {
   background-image: url("/media/category-card-dog-gifts.jpg");
+} */
+
+.card{
+  margin-bottom: 5px; 
 }
 
-.card-category-back {
+.card-body {
+  /* background-color: rgba(1, 121, 111, 0.5) */
+  background-color: #ecf5ec;
+}
+
+/* .card-category-back {
   background-color: #004040;
   border: 1px solid #01796f;
 
@@ -419,10 +433,10 @@ min-height: 350px;
 
 .card {
   margin: 20px 0;
-}
+} */
 
 /* Flip Cards CSS */
-.card-container {
+/* .card-container {
   perspective: 700px;
 }
 .card-flip {
@@ -456,7 +470,7 @@ min-height: 350px;
 
 .card-container:hover .card-flip {
   transform: rotateY(180deg);
-}
+} */
 
 /* ------ /Category card styles --------- */
 
@@ -733,10 +747,10 @@ div .grand-total,
 @media (min-width: 768px) and (max-width: 991.98px) {
 
   /* Style category cards on small and medium size devices  */
-.card-title,
+/* .card-title,
 .card-category-back p {
   font-size: 0.7rem;
-}
+} */
 
 }
 

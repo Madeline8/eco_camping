@@ -1,116 +1,83 @@
-<!-- Visit https://codepen.io/nicolaskadis/full/brQEOd/ for the latest, no js version! -->
+
 <div class="container mt-3">
     <div class="row text-center">
-
-        <!-- <div class="col-12 col-md-4 card-container card-category-tent-img card-category-img">
-            <div class="card card-flip">
-                <div class="front card-block card-category-tent-img card-category-img">
-                    <h4 class="card-title white-text">CAMPING TENTS</h4>
-                </div>
-                <div class="back card-block card-category-back white-text">
-                    <p>
-                        View a handpicked selection <br>
-                        of of camping tents
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                    </p>
-                    <a href="{% url 'products' %}?category=tents" class="btn btn-shop-now rounded-0">SHOP NOW</a>
-                </div>
-            </div>
-        </div> -->
-
-
-        <div class="card" style="width: 20rem;">
+        <div class="col-12 col-md-4 text-center">
+        <div class="card" >
             <img src="{{MEDIA_URL}}card-category-tent.jpg" class="card-category-img" alt="Card category - tent">
             <div class="card-body">
               <h5 class="card-title text-dark">CAMPING TENTS</h5>
-              <p class="card-text"> View a handpicked selection <br>
-                of of camping tents.</p>
+              <p class="card-text"> View a handpicked selection of of camping tents.<br><br><br><br>
+                </p>
                 <a href="{% url 'products' %}?category=tents" class="btn btn-shop-now rounded-0">SHOP NOW</a>
             </div>
           </div>
-
-
-        <div class="col-12 col-md-4 card-container card-category-sleepingbag-img card-category-img">
-            <div class="card card-flip">
-                <div class="front card-block card-category-sleepingbag-img card-category-img">
-                    <h4 class="card-title white-text">SLEEPING BAGS</h4>
-                </div>
-                <div class="back card-block card-category-back white-text">
-                    <p>
-                        Check out our hand-picked selection of camping sleeping bags <br>
-                        <br>
-                        <br>
-                    </p>
-                    <a href="{% url 'products' %}?category=sleeping_bags" class="btn btn-shop-now rounded-0 mb-3"> SHOP NOW</a>
-                </div>
-            </div>
         </div>
-        <div class="col-12 col-md-4 card-container card-category-lightelectro-img">
-            <div class="card card-flip">
-                <div class="front card-block card-category-lightelectro-img card-category-img">
-                    <h4 class="card-title white-text">CAMPING LIGHTNING & ELECTRONICS</h4>
+
+        <div class="col-12 col-md-4">
+            <div class="card" >
+                <img src="{{MEDIA_URL}}card-category-sleeping-bag.jpg" class="card-category-img" alt="Card category - sleeping bags">
+                <div class="card-body">
+                  <h5 class="card-title text-dark">SLEEPING BAGS</h5>
+                  <p class="card-text"> Check out our hand-picked selection of camping sleeping bags. <br><br><br></p>
+                  <a href="{% url 'products' %}?category=sleeping_bags" class="btn btn-shop-now rounded-0 mb-3"> SHOP NOW</a>
                 </div>
-                <div class="back card-block card-category-back white-text">
-                    <p>
-                        Shop for Camping Lights & Lanterns
-                        <br>
+              </div>
+            </div>
+        <div class="col-12 col-md-4">
+            <div class="card">
+                <img src="{{MEDIA_URL}}category-card-camp-lightning.jpg" class="card-category-img" alt="category - camping lightning and electronics"
+                    alt="Card category - sleeping bags">
+                <div class="card-body">
+                    <h5 class="card-title text-dark">CAMPING LIGHTNING & ELECTRONICS</h5>
+                    <p class="card-text">
+                        Shop for Camping Lights & Lanterns. <br>
                         Great selection of camping navigation and electronics.
-                        <br>
-                        <br>
-                        <br>
                     </p>
-                    <a href="{% url 'products' %}?category=lightning_and_electronics" class="btn btn-shop-now rounded-0 mb-3">SHOP NOW</a>
+                    <a href="{% url 'products' %}?category=lightning_and_electronics"
+                        class="btn btn-shop-now rounded-0 mb-3">SHOP NOW</a>
                 </div>
             </div>
         </div>
     </div>
     <div class="row text-center mb-4">
-        <div class="col-12 col-md-4 card-container card-category-kitchen-img">
-            <div class="card card-flip">
-                <div class="front card-block card-category-img card-category-kitchen-img">
-                    <h4 class="card-title white-text">CAMPING KITCHEN GEAR</h4>
-                </div>
-                <div class="back card-block card-category-back white-text">
-                    <p>
-                        Offering so much more than just a pot over an open fire can ever hope to, these comprehensive portable camping kitchens are the ultimate kitchen away from home.
-                        <br>
-                        <br>
-                    </p>
+        <div class="col-12 col-md-4">
+            <div class="card">
+                <img src="{{MEDIA_URL}}category-card-camp-lightning.jpg" class="card-category-img"
+                    alt="Card category - camping kitchen gear">
+                <div class="card-body">
+                    <h5 class="card-title text-dark">CAMPING KITCHEN GEAR</h5>
+                    <p class="card-text">
+                        Offering so much more than just a pot over an open fire can ever hope </p></p> <br> <br>
                     <a href="{% url 'products' %}?category=camp_kitchen_gear" class="btn btn-shop-now rounded-0 mb-3">SHOP NOW</a>
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-4 card-container card-category-clothes-img">
-            <div class="card card-flip">
-                <div class="front card-block card-category-clothes-img card-category-img">
-                    <h4 class="card-title white-text">CAMPING CLOTHING</h4>
-                </div>
-                <div class="back card-block card-category-back white-text">
-                    <p>
-                        Offering so much more than just a pot over an open fire can ever hope to, these comprehensive portable camping kitchens are the ultimate kitchen away from home.
-                        <br>
-                        <br>
+        <div class="col-12 col-md-4">
+            <div class="card">
+                <img src="{{MEDIA_URL}}category-card-camping-clothing.jpg" class="card-category-img"
+                    alt="Card category - camping clothing">
+                <div class="card-body">
+                    <h5 class="card-title text-dark">CAMPING CLOTHING</h5>
+                    <p class="card-text">
+                        Eco-Friendly Camping clothing! 
+                        <br><br><br><br>
                     </p>
                     <a href="{% url 'products' %}?category=camping_clothing" class="btn btn-shop-now rounded-0 mb-3">SHOP NOW</a>
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-4 card-container card-category-dog-img">
-            <div class="card card-flip">
-                <div class="front card-block card-category-dog-img card-category-img">
-                    <h4 class="card-title white-text">DOG TOYS AND GEAR</h4>
-                </div>
-                <div class="back card-block card-category-back white-text">
-                    <p>
-                        Searching for earth-friendly products for your four-legged trail buddies? We are here to help find eco-friendly products!
-                        <br>
+        <div class="col-12 col-md-4">
+            <div class="card">
+                <img src="{{MEDIA_URL}}category-card-dog-gifts.jpg" class="card-category-img"
+                    alt="Card category - dog gear">
+                <div class="card-body">
+                    <h5 class="card-title text-dark">DOG TOYS AND GEAR</h5>
+                    <p class="card-text">
+                        Searching for earth-friendly products for your four-legged trail buddies?  <br><br>
                     </p>
                     <a href="{% url 'products' %}?category=giftable_gear,dog_toys_and_gear" class="btn btn-shop-now rounded-0 mb-3">SHOP NOW</a>
                 </div>
             </div>
-        </div>
+           </div>
     </div>
 </div>
