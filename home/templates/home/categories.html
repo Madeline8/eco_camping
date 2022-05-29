@@ -21,20 +21,17 @@
             </div>
         </div> -->
 
-        <div class="col-12 col-md-4"> 
-        <h2>Tents</h2>
-        <div class="flip-card mb-2">
-            <div class="flip-card-inner">
-                <div class="flip-card-front card-category-tent-img card-category-img">
-                </div>
-                <div class="flip-card-back">
-                    <p>View a handpicked selection of camping tents</p>
-                    <br>
-                    <a href="{% url 'products' %}?category=tents" class="btn btn-shop-now rounded-0">SHOP NOW</a>
-                </div>
+
+        <div class="card" style="width: 20rem;">
+            <img src="{{MEDIA_URL}}card-category-tent.jpg" class="card-category-img" alt="Card category - tent">
+            <div class="card-body">
+              <h5 class="card-title text-dark">CAMPING TENTS</h5>
+              <p class="card-text"> View a handpicked selection <br>
+                of of camping tents.</p>
+                <a href="{% url 'products' %}?category=tents" class="btn btn-shop-now rounded-0">SHOP NOW</a>
             </div>
-        </div>
-        </div>
+          </div>
+
 
         <div class="col-12 col-md-4 card-container card-category-sleepingbag-img card-category-img">
             <div class="card card-flip">
