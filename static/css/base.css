@@ -376,36 +376,12 @@ min-height: 350px;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.9;
-  height: 200px;
+  min-height: 200px;
 }
 
 .card-text {
   font-size: 0.89rem;
 }
-
-/* .card-category-tent-img {
-  background-image: url("/media/card-category-tent.jpg");
-}
-
-.card-category-sleepingbag-img {
-  background-image: url("/media/card-category-sleeping-bag.jpg");
-}
-
-.card-category-lightelectro-img {
-  background-image: url("/media/category-card-camp-lightning.jpg");
-}
-
-.card-category-kitchen-img {
-  background-image: url("/media/category-card-camp-kitchengear1.jpg");
-}
-
-.card-category-clothes-img {
-  background-image: url("/media/category-card-camping-clothing.jpg");
-}
-
-.card-category-dog-img {
-  background-image: url("/media/category-card-dog-gifts.jpg");
-} */
 
 .card{
   margin-bottom: 5px; 
@@ -415,64 +391,6 @@ min-height: 350px;
   /* background-color: rgba(1, 121, 111, 0.5) */
   background-color: #ecf5ec;
 }
-
-/* .card-category-back {
-  background-color: #004040;
-  border: 1px solid #01796f;
-
-}
-
-.card-block  {
-  width: 100%;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-}
-
-.card {
-  margin: 20px 0;
-} */
-
-/* Flip Cards CSS */
-/* .card-container {
-  perspective: 700px;
-}
-.card-flip {
-  position: relative;
-  width: 100%;
-  transform-style: preserve-3d;
-  height: auto;
-  transition: all 0.5s ease-out;
-  background: white;
-  border: none;
-}
-
-.card-flip div {
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-  height: 100%;
-  width: 100%;
-  border: none;
-}
-
-.card-flip .front {
-  position: relative;
-  z-index: 1;
-}
-
-.card-flip .back {
-  position: relative;
-  z-index: 0;
-  transform: rotateY(-180deg);
-}
-
-.card-container:hover .card-flip {
-  transform: rotateY(180deg);
-} */
-
-/* ------ /Category card styles --------- */
 
 
 /* ---------------------------/Homepage */
@@ -743,15 +661,5 @@ div .grand-total,
 
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-
-  /* Style category cards on small and medium size devices  */
-/* .card-title,
-.card-category-back p {
-  font-size: 0.7rem;
-} */
-
-}
 
 /*-------------------------------------- /Media Queries */
