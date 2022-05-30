@@ -4,94 +4,99 @@
 
 
 View the repository in GitHub [here](https://github.com/Madeline8/eco_camping)
+
 View the live project [here](https://ecocamping.herokuapp.com/)
 
 
 TABLE OF CONTENTS
 
-USER EXPERIENCE
 [USER EXPERIENCE](#USER-EXPERIENCE)
 
 [Project Goals](#Project_goals)
 
 [User Stories­](#User-stories)
- 
+
 [Design](#Design)
 
 [Wireframes](#wireframes)
 
 
-DATABASE SCHEMA
+[DATABASE SCHEMA](#database-schema)
+
+[FEATURES](#features)
+
+[Existing Features](#existing-features)
+
+[Features Still to Implement](#features-still-to-implement)
+
+[TECHNOLOGIES USED](#technologies-used)
 
 
+[Languages Used](#languages-used)
 
-FEATURES
-
-
-Existing Features
-
-Features still to implement
-
-TECHNOLOGIES USED
-
-Languages Used
-
-Frameworks, Libraries and Programs used
-
-Testing Tools used
+[Frameworks, Libraries and Programs used](#Frameworks-Libraries-and-Programs-used)
 
 
-
-TESTING
-
- 
-Code Validation
-
-Testing User Stories
-
-Manual Testing
-
-Further Testing
-
-Browser Compatibility
+[Testing Tools used](#Testing-Tools-used)
 
 
-Responsiveness / Device Compatibility
+[TESTING](#testing)
 
 
-Manual device testing
+[Code Validation](#code-validation)
 
 
-Solved Bugs
+[Testing User Stories](#Testing-user-stories)
 
 
-Known Bugs
+[Manual Testing](#Manual-testing)
 
 
-
-DEPLOYMENT
-
-Local Hosting
-
-Deployment to Heroku
-
-Storing Static files in AWS
+[Further Testing](#Further-testing)
 
 
-
-CREDITS
-
-Code
-
-Content
-
-Media
+[Browser Compatibility](#browser-compatibility)
 
 
+[Description](#Responsiveness-and-device-compatibility)
 
-ACKNOWLEDGMENTS
 
-DISCLAIMER
+[Manual device testing](#Manual-device-testing)
+
+
+[Solved Bugs](#solved-bugs)
+
+
+[Known Bugs](#Known-bugs)
+
+
+[DEPLOYMENT](#deployment)
+
+[Local Hosting](#Local-Hosting)
+
+[Deployment to Heroku](#Deployment-to-Heroku)
+
+
+[Storing Static files in AWS](#Storing-Static-files-in-AWS)
+
+
+[CREDITS](#credits)
+
+
+[Code](#code)
+
+
+[Content](#content)
+
+[Media](#media)
+
+
+[ACKNOWLEDGMENTS](#acknowledgments)
+
+
+[DISCLAIMER](#disclaimer)
+
+----------------------- 
 
 
 ### USER EXPERIENCE
@@ -340,7 +345,7 @@ Django Allauth set the login, register, email confirmation pages etc. I have ame
 - [Python](https://www.python.org/) - for backend functionality.
 - [Javascript](https://en.wikipedia.org/wiki/JavaScript) - for front end functionality.
  
-### FRAMEWORKS, LIBRARIES AND AND PROGRAMS USED
+### FRAMEWORKS LIBRARIES AND AND PROGRAMS USED
 
  - [Responsiveness](https://techsini.com/)  - used to preview my site across a variety of devices.
  - [Heroku](https://dashboard.heroku.com/) - is a cloud platform used to deploy the app
@@ -352,6 +357,21 @@ Django Allauth set the login, register, email confirmation pages etc. I have ame
  - [Balsamiq](https://balsamiq.com/)  - used to create the wireframes.
  - [Creately](https://app.creately.com/) - used to prepare the database schema for this project. 
  - [StackEdit](https://stackedit.io/)  - used to write my README file throughout the project.
+ - [Django](https://www.djangoproject.com/)  - main framework used for this project.
+ - [Django AllAuth](https://django-allauth.readthedocs.io/en/latest/index.html)  - User authentication in the project. 
+ - [Stripe](https://stripe.com/gb)  - Used to handle payments.
+ - [Bootstrap4](lihttps://getbootstrap.com/docs/4.4/getting-started/download/nk)  - Site Responsiveness and UX
+ - [SQlite](https://www.sqlite.org/index.html)  - Database used in development.
+ - [PostgreSQL](https://www.postgresql.org/)  - Database used in production.
+ - [jQuery](https://jquery.com/)  - helped with DOM styling.
+ - [Creately](https://app.creately.com/)  - Used to create Database Schema.
+ - [Git](https://git-scm.com/)  - Used for version control.
+ - [Description](link)  - ...
+ - [Description](link)  - ...
+ - [Description](link)  - ...
+ - [Description](link)  - ...
+ 
+
  
  ### TESTING TOOLS USED
 - [Autoprefixer](https://autoprefixer.github.io/)  - used to parse the CSS and to add vendor prefixes to CSS rules.
@@ -666,7 +686,7 @@ Site was tested across the following browsers:
 | **Responsiveness** | OK | OK |  OK | 
 
 
-### RESPONSIVENESS/ DEVICE COMPATIBILITY
+### RESPONSIVENESS AND DEVICE COMPATIBILITY
 
 In order to test responsiveness and device compatibility, I used the following tools:
 [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
