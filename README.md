@@ -9,17 +9,16 @@ View the live project [here](https://ecocamping.herokuapp.com/)
 
 TABLE OF CONTENTS
 
-USER-EXPERIENCE
+USER EXPERIENCE
+[USER EXPERIENCE](#USER-EXPERIENCE)
 
-Project Goals
+[Project Goals](#Project_goals)
 
-User Stories­
-
-Design  
+[User Stories­](#User-stories)
+ 
 [Design](#Design)
 
-Wireframes
-
+[Wireframes](#wireframes)
 
 
 DATABASE SCHEMA
